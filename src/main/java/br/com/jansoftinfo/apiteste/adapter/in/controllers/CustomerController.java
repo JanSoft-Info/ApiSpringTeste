@@ -1,7 +1,7 @@
 package br.com.jansoftinfo.apiteste.adapter.in.controllers;
 
 import br.com.jansoftinfo.apiteste.adapter.in.dto.CustomerDTO;
-import br.com.jansoftinfo.apiteste.domain.ports.in.CustomerPort;
+import br.com.jansoftinfo.apiteste.ports.in.CustomerPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,30 +14,30 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/customers")
 public class CustomerController {
-    private final CustomerPort customerPort;
+    private final CustomerPort port;
 
     @GetMapping
     public ResponseEntity<?> getCustomers() {
-        return new ResponseEntity<List<CustomerDTO>>(customerPort.getCustomers(), HttpStatus.OK);
+        return new ResponseEntity<List<CustomerDTO>>(port.getCustomers(), HttpStatus.OK);
     }
 
     @GetMapping("/query")
     public ResponseEntity<?> getCustomersByType(@RequestParam("customerType") String customerType) {
-        return new ResponseEntity<List<CustomerDTO>>(customerPort.getCustomersByType(customerType), HttpStatus.OK);
+        return new ResponseEntity<List<CustomerDTO>>(port.getCustomersByType(customerType), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<?> getCustomer(@PathVariable Long id) {
-        return customerPort.getCustomer(id);
+        return port.getCustomer(id);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<?> putCustomer(@PathVariable Long id, @Validated @RequestBody CustomerDTO customer) {
-        return customerPort.putCustomer(id, customer);
+        return port.putCustomer(id, customer);
     }
 
     @PostMapping
     public ResponseEntity<?> postCustomer(@Validated @RequestBody CustomerDTO customer) {
-        return new ResponseEntity<CustomerDTO>(customerPort.postCustomer(customer), HttpStatus.CREATED);
+        return new ResponseEntity<CustomerDTO>(port.postCustomer(customer), HttpStatus.CREATED);
     }
 }

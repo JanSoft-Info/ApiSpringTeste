@@ -159,6 +159,120 @@
 			"response": []
 		},
 		{
+			"name": "operations",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5001/operations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"operations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operationById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5001/operations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"operations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operationsByStatus",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5001/operations/query?operationStatus=ABERTA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"operations",
+						"query"
+					],
+					"query": [
+						{
+							"key": "operationStatus",
+							"value": "ABERTA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operationsByCustomerId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5001/operations/query?operationStatus=ABERTA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"operations",
+						"query"
+					],
+					"query": [
+						{
+							"key": "operationStatus",
+							"value": "ABERTA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "actuator",
 			"request": {
 				"method": "GET",
@@ -170,15 +284,14 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5001/customers/2",
+					"raw": "http://localhost:5001/actuator",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"customers",
-						"2"
+						"actuator"
 					]
 				}
 			},
@@ -196,15 +309,41 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5001/customers/2",
+					"raw": "http://localhost:5001/actuator/health",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"customers",
-						"2"
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actuatorMetrics",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5001/actuator/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"actuator",
+						"metrics"
 					]
 				}
 			},

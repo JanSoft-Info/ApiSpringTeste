@@ -8,8 +8,6 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 public interface CustomerRepository extends JpaRepository<CustomerEntity, Long> {
-
     @Query(value = "select * from cliente where tipo_cliente = ?", nativeQuery = true)
     List<CustomerEntity> getCustomerByType(@Param("customerType") String customerType);
-
 }

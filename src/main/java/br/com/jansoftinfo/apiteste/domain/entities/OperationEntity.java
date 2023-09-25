@@ -1,9 +1,7 @@
 package br.com.jansoftinfo.apiteste.domain.entities;
 
 import br.com.jansoftinfo.apiteste.adapter.utils.OperationStatusEnum;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -12,6 +10,8 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
+@Builder
+@NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "operacao")
 public class OperationEntity {

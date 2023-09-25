@@ -5,7 +5,7 @@ import br.com.jansoftinfo.apiteste.adapter.out.dto.ErrorDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.mappers.CustomerMapper;
 import br.com.jansoftinfo.apiteste.adapter.out.repositories.CustomerRepository;
 import br.com.jansoftinfo.apiteste.domain.entities.CustomerEntity;
-import br.com.jansoftinfo.apiteste.domain.ports.in.CustomerPort;
+import br.com.jansoftinfo.apiteste.ports.in.CustomerPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,24 +17,24 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 class CustomerUsecase implements CustomerPort {
-    private final CustomerMapper customerMapper;
-    private final CustomerRepository customerRepository;
+    private final CustomerMapper mapper;
+    private final CustomerRepository repository;
 
     @Override
     public List<CustomerDTO> getCustomers() {
-        return customerMapper.toDTO(customerRepository.findAll());
+        return mapper.toDTO(repository.findAll());
     }
 
     @Override
     public List<CustomerDTO> getCustomersByType(String customerType) {
-        return customerMapper.toDTO(customerRepository.getCustomerByType(customerType));
+        return mapper.toDTO(repository.getCustomerByType(customerType));
     }
 
     @Override
     public ResponseEntity<?> getCustomer(Long id) {
         var customer = findCustomerById(id);
         if (customer.isPresent())
-            return new ResponseEntity<>(customerMapper.toDTO(customer.get()), HttpStatus.OK);
+            return new ResponseEntity<>(mapper.toDTO(customer.get()), HttpStatus.OK);
         else
             return new ResponseEntity<>(ErrorDTO.builder()
                     .message("Cliente não encontrado")
@@ -45,8 +45,8 @@ class CustomerUsecase implements CustomerPort {
     public ResponseEntity<?> putCustomer(Long id, CustomerDTO customerDTO) {
         var customer = findCustomerById(id);
         if (customer.isPresent())
-            return new ResponseEntity<>(customerMapper
-                    .toDTO(customerRepository.save(customerMapper
+            return new ResponseEntity<>(mapper
+                    .toDTO(repository.save(mapper
                             .toEntity(customerDTO))), HttpStatus.OK);
         else
             return new ResponseEntity<>(ErrorDTO.builder()
@@ -56,11 +56,11 @@ class CustomerUsecase implements CustomerPort {
 
     @Override
     public CustomerDTO postCustomer(CustomerDTO customer) {
-        CustomerEntity customerEntity = customerRepository.save(customerMapper.toEntity(customer));
-        return customerMapper.toDTO(customerEntity);
+        CustomerEntity customerEntity = repository.save(mapper.toEntity(customer));
+        return mapper.toDTO(customerEntity);
     }
 
     private Optional<CustomerEntity> findCustomerById(Long id) {
-         return customerRepository.findById(id);
+         return repository.findById(id);
     }
 }
