@@ -137,7 +137,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cpf_cnpj\": \"33138773389\", \r\n    \"nome_cliente\": \"Damião Oliveira Serpa\", \r\n    \"tipo_cliente\": \"FISICA\"\r\n}",
+					"raw": "{\r\n    \"cpf_cnpj\": \"33138773389\", \r\n    \"nome_cliente\": \"Damião Oliveira Serpa\", \r\n    \"tipo_cliente\": \"F\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -195,14 +195,15 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5001/operations",
+					"raw": "http://localhost:5001/operations/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "5001",
 					"path": [
-						"operations"
+						"operations",
+						"1"
 					]
 				}
 			},
@@ -220,7 +221,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5001/operations/query?operationStatus=ABERTA",
+					"raw": "http://localhost:5001/operations/query?operationStatus=A",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -233,7 +234,7 @@
 					"query": [
 						{
 							"key": "operationStatus",
-							"value": "ABERTA"
+							"value": "A"
 						}
 					]
 				}
@@ -252,7 +253,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:5001/operations/query?operationStatus=ABERTA",
+					"raw": "http://localhost:5001/operations/customers/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -260,13 +261,8 @@
 					"port": "5001",
 					"path": [
 						"operations",
-						"query"
-					],
-					"query": [
-						{
-							"key": "operationStatus",
-							"value": "ABERTA"
-						}
+						"customers",
+						"4"
 					]
 				}
 			},

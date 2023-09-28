@@ -1,9 +1,10 @@
 package br.com.jansoftinfo.apiteste.domain.entities;
 
-import br.com.jansoftinfo.apiteste.adapter.utils.CustomerTypeEnum;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
 @Getter
 @Setter
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "cliente")
-public class CustomerEntity {
+public class CustomerEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_cliente")
@@ -26,6 +27,10 @@ public class CustomerEntity {
     private String customerName;
 
     @Column(name = "tipo_cliente")
-    @Enumerated(EnumType.STRING)
-    private CustomerTypeEnum customerType;
+    private String customerType;
+
+    // RELACIONAMENTOS \\
+
+    @OneToMany
+    List<OperationEntity> operations;
 }

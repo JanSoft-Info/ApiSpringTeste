@@ -1,4 +1,4 @@
-package br.com.jansoftinfo.apiteste.ports.in;
+package br.com.jansoftinfo.apiteste.domain.ports.in;
 
 import br.com.jansoftinfo.apiteste.adapter.in.dto.OperationDTO;
 import org.springframework.http.ResponseEntity;

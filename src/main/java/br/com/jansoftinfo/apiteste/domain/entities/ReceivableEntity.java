@@ -1,12 +1,12 @@
 package br.com.jansoftinfo.apiteste.domain.entities;
 
-import br.com.jansoftinfo.apiteste.adapter.utils.ReceivableTypeEnum;
-import br.com.jansoftinfo.apiteste.adapter.utils.ReceivableStatusEnum;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -14,9 +14,10 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @Entity
+@NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "recebivel")
-public class ReceivableEntity {
+public class ReceivableEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_recebivel")
@@ -37,11 +38,14 @@ public class ReceivableEntity {
     @Column(name = "valor_operacao")
     private BigDecimal receivableValue;
 
-    @Enumerated(EnumType.STRING)
     @Column(name = "tipo_recebivel")
-    private ReceivableTypeEnum receivableType;
+    private String receivableType;
 
-    @Enumerated(EnumType.STRING)
     @Column(name = "status_recebivel")
-    private ReceivableStatusEnum receivableStatus;
+    private String receivableStatus;
+
+    // RELACIONAMENTOS \\
+
+    @ManyToOne
+    private OperationEntity operation;
 }

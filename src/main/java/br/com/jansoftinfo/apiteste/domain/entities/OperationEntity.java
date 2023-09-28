@@ -1,11 +1,14 @@
 package br.com.jansoftinfo.apiteste.domain.entities;
 
-import br.com.jansoftinfo.apiteste.adapter.utils.OperationStatusEnum;
+import br.com.jansoftinfo.apiteste.adapter.utils.enums.OperationStatusEnum;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
@@ -14,7 +17,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "operacao")
-public class OperationEntity {
+public class OperationEntity implements Serializable {
     @Id
     @Column(name = "id_operacao")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,7 +32,16 @@ public class OperationEntity {
     @Column(name = "data_hora_operacao")
     private LocalDateTime operationDateTime;
 
-    @Enumerated(EnumType.STRING)
     @Column(name = "status_operacao")
-    private OperationStatusEnum operationStatus;
+    private String operationStatus;
+
+    // RELACIONAMENTOS \\
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_cliente", referencedColumnName = "id_cliente", insertable = false, updatable = false)
+    private CustomerEntity customerEntity;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_operacao", referencedColumnName = "id_operacao", insertable = false, updatable = false)
+    private List<ReceivableEntity> receivablesEntity;
 }

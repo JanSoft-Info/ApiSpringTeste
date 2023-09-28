@@ -1,7 +1,7 @@
 package br.com.jansoftinfo.apiteste.adapter.in.controllers;
 
 import br.com.jansoftinfo.apiteste.adapter.in.dto.OperationDTO;
-import br.com.jansoftinfo.apiteste.ports.in.OperationPort;
+import br.com.jansoftinfo.apiteste.domain.ports.in.OperationPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,11 +1,11 @@
 package br.com.jansoftinfo.apiteste.domain.usecase;
 
 import br.com.jansoftinfo.apiteste.adapter.in.dto.OperationDTO;
-import br.com.jansoftinfo.apiteste.adapter.out.dto.ErrorDTO;
+import br.com.jansoftinfo.apiteste.domain.exceptions.ErrorDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.mappers.OperationMapper;
 import br.com.jansoftinfo.apiteste.adapter.out.repositories.OperationRepository;
 import br.com.jansoftinfo.apiteste.domain.entities.OperationEntity;
-import br.com.jansoftinfo.apiteste.ports.in.OperationPort;
+import br.com.jansoftinfo.apiteste.domain.ports.in.OperationPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

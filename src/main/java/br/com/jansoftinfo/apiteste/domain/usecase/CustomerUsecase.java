@@ -1,11 +1,11 @@
 package br.com.jansoftinfo.apiteste.domain.usecase;
 
 import br.com.jansoftinfo.apiteste.adapter.in.dto.CustomerDTO;
-import br.com.jansoftinfo.apiteste.adapter.out.dto.ErrorDTO;
+import br.com.jansoftinfo.apiteste.domain.exceptions.ErrorDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.mappers.CustomerMapper;
 import br.com.jansoftinfo.apiteste.adapter.out.repositories.CustomerRepository;
 import br.com.jansoftinfo.apiteste.domain.entities.CustomerEntity;
-import br.com.jansoftinfo.apiteste.ports.in.CustomerPort;
+import br.com.jansoftinfo.apiteste.domain.ports.in.CustomerPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

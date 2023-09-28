@@ -1,5 +1,6 @@
-package br.com.jansoftinfo.apiteste.adapter.out.dto;
+package br.com.jansoftinfo.apiteste.domain.exceptions;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import org.springframework.http.HttpStatus;
 
@@ -9,5 +10,6 @@ import org.springframework.http.HttpStatus;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ErrorDTO {
+    @JsonProperty("mensagem")
     private String message;
 }
