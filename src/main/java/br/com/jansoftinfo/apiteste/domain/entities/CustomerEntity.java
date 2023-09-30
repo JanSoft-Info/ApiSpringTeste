@@ -29,7 +29,7 @@ public class CustomerEntity implements Serializable {
     @Column(name = "tipo_cliente")
     private String customerType;
 
-    // RELACIONAMENTOS \\
+    /* RELACIONAMENTOS JPA */
 
     @OneToMany
     List<OperationEntity> operations;

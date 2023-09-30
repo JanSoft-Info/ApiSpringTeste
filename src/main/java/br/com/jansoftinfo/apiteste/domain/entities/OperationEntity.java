@@ -35,7 +35,7 @@ public class OperationEntity implements Serializable {
     @Column(name = "status_operacao")
     private String operationStatus;
 
-    // RELACIONAMENTOS \\
+    /* RELACIONAMENTOS JPA */
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_cliente", referencedColumnName = "id_cliente", insertable = false, updatable = false)

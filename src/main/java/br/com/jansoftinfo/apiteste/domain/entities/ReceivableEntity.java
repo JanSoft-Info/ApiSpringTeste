@@ -44,7 +44,7 @@ public class ReceivableEntity implements Serializable {
     @Column(name = "status_recebivel")
     private String receivableStatus;
 
-    // RELACIONAMENTOS \\
+    /* RELACIONAMENTOS JPA */
 
     @ManyToOne
     private OperationEntity operation;
