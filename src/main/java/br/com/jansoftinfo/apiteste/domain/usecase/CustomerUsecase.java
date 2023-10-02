@@ -59,9 +59,7 @@ class CustomerUsecase implements CustomerInPort {
 
     @Override
     public CustomerOutDTO postCustomer(CustomerInDTO customer) {
-        CustomerEntity entity = mapperIn.toEntity(customer);
-        CustomerEntity customerEntity = repository.save(entity);
-        return mapperOut.toDTO(customerEntity);
+        return mapperOut.toDTO(repository.save(mapperIn.toEntity(customer)));
     }
 
     private Optional<CustomerEntity> findCustomerById(Long id) {
