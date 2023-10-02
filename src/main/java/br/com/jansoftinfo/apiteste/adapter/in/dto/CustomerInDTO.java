@@ -12,11 +12,11 @@ import javax.validation.constraints.NotNull;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class CustomerDTO {
+public class CustomerInDTO {
     @JsonProperty("id_cliente")
     private Long customerId;
 
-    @JsonProperty("cpf_cnpj")
+    @JsonProperty("cpf_cnpj_cliente")
     @NotNull(message = "{error.customer.cpfcnpj.null}")
     @NotBlank(message = "{error.customer.cpfcnpj.blank}")
     private String documentId;

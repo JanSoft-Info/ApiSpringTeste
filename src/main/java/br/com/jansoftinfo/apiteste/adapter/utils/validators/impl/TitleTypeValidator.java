@@ -5,7 +5,7 @@ import br.com.jansoftinfo.apiteste.adapter.utils.enums.CustomerTypeEnum;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-public class OperationStatusValidator implements ConstraintValidator<br.com.jansoftinfo.apiteste.adapter.utils.validators.OperationStatusValidator, String> {
+public class TitleTypeValidator implements ConstraintValidator<br.com.jansoftinfo.apiteste.adapter.utils.validators.TitleTypeValidator, String> {
     @Override
     public boolean isValid(String s, ConstraintValidatorContext constraintValidatorContext) {
         for (CustomerTypeEnum e : CustomerTypeEnum.values()) {

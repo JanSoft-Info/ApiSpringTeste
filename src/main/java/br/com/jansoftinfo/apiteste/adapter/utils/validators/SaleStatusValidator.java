@@ -11,9 +11,9 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
 @Target(ElementType.FIELD)
 @Retention(RUNTIME)
-@Constraint(validatedBy = br.com.jansoftinfo.apiteste.adapter.utils.validators.impl.ReceivableTypeValidator.class)
+@Constraint(validatedBy = br.com.jansoftinfo.apiteste.adapter.utils.validators.impl.SaleStatusValidator.class)
 @ReportAsSingleViolation
-public @interface ReceivableTypeValidator {
+public @interface SaleStatusValidator {
     String message() default "";
 
     Class<?>[] groups() default {};

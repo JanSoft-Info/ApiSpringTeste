@@ -19,8 +19,8 @@ public class CustomerEntity implements Serializable {
     @Column(name = "id_cliente")
     private Long customerId;
 
-    @Column(name = "cpf_cnpj", unique = true)
-    private String documentId;
+    @Column(name = "cpf_cnpj_cliente", unique = true)
+    private String customerDocumentId;
 
     @NonNull
     @Column(name = "nome_cliente")
@@ -32,5 +32,5 @@ public class CustomerEntity implements Serializable {
     /* RELACIONAMENTOS JPA */
 
     @OneToMany
-    List<OperationEntity> operations;
+    List<SaleEntity> customerSale;
 }

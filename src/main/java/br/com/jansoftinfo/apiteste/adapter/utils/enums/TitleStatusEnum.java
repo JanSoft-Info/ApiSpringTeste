@@ -1,11 +1,11 @@
 package br.com.jansoftinfo.apiteste.adapter.utils.enums;
 
-public enum ReceivableStatusEnum {
+public enum TitleStatusEnum {
     ABERTO("A"), VENCIDO("V"), LIQUIDADO("L");
 
     private String value;
 
-    ReceivableStatusEnum(String value) {
+    TitleStatusEnum(String value) {
         this.value = value;
     }
 

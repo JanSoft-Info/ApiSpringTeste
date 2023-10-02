@@ -1,11 +1,11 @@
 package br.com.jansoftinfo.apiteste.adapter.utils.enums;
 
-public enum OperationStatusEnum {
+public enum SaleStatusEnum {
     ABERTA("A"), FECHADA("F");
 
     private String value;
 
-    OperationStatusEnum(String value) {
+    SaleStatusEnum(String value) {
         this.value = value;
     }
 

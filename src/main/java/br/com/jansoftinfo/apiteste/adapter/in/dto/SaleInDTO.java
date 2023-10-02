@@ -1,13 +1,10 @@
 package br.com.jansoftinfo.apiteste.adapter.in.dto;
 
-import br.com.jansoftinfo.apiteste.adapter.utils.validators.OperationStatusValidator;
+import br.com.jansoftinfo.apiteste.adapter.utils.validators.SaleStatusValidator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -17,9 +14,12 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class OperationDTO {
+public class SaleInDTO {
     @JsonProperty("id_operation")
     private Long operationId;
+
+    @Email(message = "dsfkjslkfjdskljklfsjklgjs")
+    private String email;
 
     @JsonProperty("valor_operacao")
     @NotNull(message = "{error.operation.value.null}")
@@ -34,12 +34,12 @@ public class OperationDTO {
     @JsonProperty("status_operacao")
     @NotNull(message = "{error.operation.status.null}")
     @NotBlank(message = "{error.operation.status.blank}")
-    @OperationStatusValidator(message = "{error.operation.status.invalid}")
+    @SaleStatusValidator(message = "{error.operation.status.invalid}")
     private String operationStatus;
 
     @JsonProperty("cliente_operacao")
-    private CustomerDTO customer;
+    private CustomerInDTO customer;
 
     @JsonProperty("recebiveis_operacao")
-    private List<ReceivableDTO> receivables;
+    private List<TitleInDTO> receivables;
 }
