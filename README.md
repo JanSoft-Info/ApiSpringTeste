@@ -1,7 +1,7 @@
 # ApiSpringTeste
 Api de Testes desenvolvida com Java e o framework Spring Boot com o objetivo didático servindo como uma aplicação para testes de novas tecnologias e funcionalidades.
 
-## JAVA
+## Java
 Essa API foi desenvolvida utilizando o Java 11
 
 ## Spring Framework
@@ -11,6 +11,9 @@ Essa API foi desenvolvida utilizando a versão 2.5.0 do Spring Framework
 Essa API disponibiliza uma serviço REST que pode ser acessado utilizando uma plataforma de API do tipo Postman. O collection das chamadas da API estão diponibilizados na pasta indicada abaixo:
 - \ApiSpringTest\postman
 
+### Arquitetura Hexagonal
+Essa API implementa a arquitetura hexagonal que visa a criação de componentes de aplicação fracamente acoplados que podem ser facilmente conectados ao seu ambiente de software por meio de portas e adaptadores. 
+
 ## Banco de Dados
 Essa API usa o banco de dados em memória H2 e conta com o arquivo que popula o banco incialmente assim que a aplicação for executa. Esse arquivo encontra-se indicado na pasta abaixo:
 - \ApiSpringTeste\src\main\resources\data.sql
@@ -18,6 +21,10 @@ Essa API usa o banco de dados em memória H2 e conta com o arquivo que popula o 
 ### Modelo Entidade Relacional
 Foi criado um modelo Entidade Relacional (ER) para demonstração das estruturas e relacionamentos das tabelas utilizadas pela API. Esse modelo está disponibilizado na pasta indicada abaixo:
 - \ApiSpringTeste\modelorelacional
+
+## Observability
+Essa API expõe endpoints de gerenciamento extras para utilização de métricas. No docker-compose disponibilizado junto com ela, instala e configura o Prometheus e Grafana para fins de estudo da construção de dashboards. Segue abaixo os endpoints expostos:
+- info,metrics,health,prometheus
 
 ## Docker
 Essa API disponibiliza um docker-compose para baixar e conteniarizar algumas imagems de aplicações utilizadas pela mesma, esse arquivo esta na pasta indicada abaixo:
@@ -30,7 +37,7 @@ Após a instalação, verifique se o docker-compose está instalado corretamente
 - docker-compose --version
 
 Agora, acesse a pasta \java\ApiSpringTeste\docker pelo terminal e execute o comando:
-- docker-compose up
+- docker-compose up -d
 
 ## URLs da API
 ### Database H2
