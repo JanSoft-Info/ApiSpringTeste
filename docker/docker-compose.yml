@@ -1,25 +1,31 @@
-version: '3.7'
+version: '3.8'
+
+networks:
+  apispringtest:
+    driver: bridge
+
+volumes:
+  prometheus_data: {}
+  grafana_data: {}
 
 services:
   prometheus:
-    image: 'prom/prometeus'
+    image: prom/prometheus
     ports:
-      - "9090:9090"
-    command:
-      - --config.file=/etc/prometheus/prometheus.yml
+      - '9090:9090'
     volumes:
-      - ./obsevability/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./:/etc/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    networks:
+      - apispringtest
   grafana:
-    image: 'grafana/grafana'
+    image: grafana/grafana-oss
+    container_name: grafana
+    restart: unless-stopped
     ports:
-      - "3000:3000"
-
-networks:
-  default:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.22.0.0/16
-
-volumes:
-  apiteste: {}
+      - '3000:3000'
+    volumes:
+      - grafana_data:/var/lib/grafana
+    networks:
+      - apispringtest
