@@ -17,6 +17,7 @@ public interface Constants {
     String MESSAGE_CODE403 = "Requisição não permitida";
     String MESSAGE_CODE404 = "Requisição inválida";
     String MESSAGE_CODE500 = "Erro interno";
+    String HTTP_CONTENT_TYPE = "application/json";
     String GET_CUSTOMERS = "Endpoint que lista todos os clientes cadastrados";
     String GET_CUSTOMERS_ID = "Endpoint que consulta um cliente por id";
     String GET_CUSTOMERS_QUERY = "Endpoint que consulta clientes por tipo";
