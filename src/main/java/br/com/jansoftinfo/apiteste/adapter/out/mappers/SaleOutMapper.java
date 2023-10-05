@@ -14,9 +14,9 @@ import java.util.List;
 @Component
 public class SaleOutMapper {
 
-    public List<SaleOutDTO> toDTO(List<SaleEntity> entity) {
+    public List<SaleOutDTO> toDTO(List<SaleEntity> entities) {
         var salesDTO = new ArrayList<SaleOutDTO>();
-        entity.forEach(sale -> {
+        entities.forEach(sale -> {
             salesDTO.add(getSale(sale));
         });
         return salesDTO;
@@ -39,22 +39,20 @@ public class SaleOutMapper {
 
     private static CustomerOutDTO getCustomerDTO(SaleEntity entity) {
         return CustomerOutDTO.builder()
-                .customerId(entity.getCustomerEntity().getCustomerId())
-                .documentId(entity.getCustomerEntity().getCustomerDocumentId())
-                .customerName(entity.getCustomerEntity().getCustomerName())
-                .customerType(entity.getCustomerEntity().getCustomerType())
+                .customerId(entity.getCustomer().getCustomerId())
+                .documentId(entity.getCustomer().getCustomerDocumentId())
+                .customerName(entity.getCustomer().getCustomerName())
+                .customerType(entity.getCustomer().getCustomerType())
                 .build();
     }
 
     private static List<TitleOutDTO> getTitleDTOS(SaleEntity entity) {
         List<TitleOutDTO> titlesDTO = new ArrayList<>();
-        List<TitleEntity> titlesEntity = entity.getTitleEntity();
+        List<TitleEntity> titlesEntity = entity.getTitles();
         titlesEntity.forEach(title -> {
             titlesDTO.add(
                     TitleOutDTO.builder()
                             .titleId(title.getTitleId())
-                            .titleSaleId(title.getTitleSaleId())
-                            .titleCustomerId(title.getTitleCustomerId())
                             .titleDateTime(title.getTitleDateTime())
                             .titleDueDate(title.getTitleDueDate())
                             .titleValue(title.getTitleValue())

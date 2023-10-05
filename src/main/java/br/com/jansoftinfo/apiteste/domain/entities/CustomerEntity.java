@@ -3,7 +3,6 @@ package br.com.jansoftinfo.apiteste.domain.entities;
 import lombok.*;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.List;
 
 @Getter
@@ -13,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "cliente")
-public class CustomerEntity implements Serializable {
+public class CustomerEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_cliente")
@@ -30,7 +29,6 @@ public class CustomerEntity implements Serializable {
     private String customerType;
 
     /* RELACIONAMENTOS JPA */
-
-    @OneToMany
-    List<SaleEntity> customerSale;
+    @OneToMany(mappedBy = "customer")
+    List<SaleEntity> sales;
 }

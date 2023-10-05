@@ -1,12 +1,8 @@
 package br.com.jansoftinfo.apiteste.domain.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -17,35 +13,34 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "titulo")
-public class TitleEntity implements Serializable {
+public class TitleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_titulo")
     private Long titleId;
 
-    @Column(name = "id_venda_titulo")
-    private Long titleSaleId;
-
-    @Column(name = "id_cliente_titulo")
-    private Long titleCustomerId;
-
+    @NonNull
     @Column(name = "data_hora_titulo")
     private LocalDateTime titleDateTime;
 
+    @NonNull
     @Column(name = "data_vencimento_titulo")
     private LocalDate titleDueDate;
 
+    @NonNull
     @Column(name = "valor_titulo")
     private BigDecimal titleValue;
 
+    @NonNull
     @Column(name = "tipo_titulo")
     private String titleType;
 
+    @NonNull
     @Column(name = "status_titulo")
     private String titleStatus;
 
     /* RELACIONAMENTOS JPA */
-
     @ManyToOne
-    private SaleEntity titleSale;
+    @JoinColumn(name = "id_venda_titulo")
+    private SaleEntity sale;
 }
