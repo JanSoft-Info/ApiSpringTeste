@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Configuration
-public class KafkaConfiguration {
+public class KafkaConsumerConfiguration {
     @Bean
     public ConcurrentKafkaListenerContainerFactory<String, String> kafkaFactory() {
         var kafkaFactory = new ConcurrentKafkaListenerContainerFactory<String, String>();

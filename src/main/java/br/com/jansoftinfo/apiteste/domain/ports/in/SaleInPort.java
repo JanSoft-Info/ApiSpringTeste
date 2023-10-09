@@ -13,4 +13,6 @@ public interface SaleInPort {
     ResponseEntity<?> getSale(Long id);
 
     List<SaleOutDTO> getSalesByCustomerId(Long id);
+
+    void sendMessage(String message);
 }

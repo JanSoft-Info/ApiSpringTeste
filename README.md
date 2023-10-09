@@ -22,9 +22,18 @@ Essa API usa o banco de dados em memória H2 e conta com o arquivo que popula o 
 Foi criado um modelo Entidade Relacional (ER) para demonstração das estruturas e relacionamentos das tabelas utilizadas pela API. Esse modelo está disponibilizado na pasta indicada abaixo:
 - \ApiSpringTeste\modelorelacional
 
+## Mensageria
+### Kafka
+Essa API disponibiliza um serviço de mensageria Kafka composto com um Producer e um Consumer para o tópico "api.spring.teste.topic". Os componentes necessário para execução do Kafka estão incluídos no docker-compose. Ao ser executado pala primeira vez, abra o KafkaDrop e crie o tópico mencionado.
+
 ## Observability
 Essa API expõe endpoints de gerenciamento extras para utilização de métricas. No docker-compose disponibilizado junto com ela, instala e configura o Prometheus e Grafana para fins de estudo da construção de dashboards. Segue abaixo os endpoints expostos:
 - info,metrics,health,prometheus
+
+### Grafana
+Essa API disponibiliza alguns painéis de observabilidade feitos no grafana, para acessar use o usuário e senha indicados abaixo:
+- User: admin
+- Password: admin
 
 ## Docker
 Essa API disponibiliza um docker-compose para baixar e conteniarizar algumas imagems de aplicações utilizadas pela mesma, esse arquivo esta na pasta indicada abaixo:
@@ -42,6 +51,12 @@ Agora, acesse a pasta \java\ApiSpringTeste\docker pelo terminal e execute o coma
 ## URLs da API
 ### Database H2
 http://localhost:5001/h2-console
+### Promethues
+http://localhost:9090
+### Grafana
+http://localhost:3000
+### kafkaDrop
+http://localhost:9000
 ### Actuator
 http://localhost:5001/actuator
 ### Health

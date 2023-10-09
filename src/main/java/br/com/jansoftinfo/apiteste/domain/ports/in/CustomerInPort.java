@@ -1,6 +1,6 @@
 package br.com.jansoftinfo.apiteste.domain.ports.in;
 
-import br.com.jansoftinfo.apiteste.adapter.in.dto.CustomerInDTO;
+import br.com.jansoftinfo.apiteste.adapter.in.controllers.dto.CustomerInDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.dto.CustomerOutDTO;
 import org.springframework.http.ResponseEntity;
 

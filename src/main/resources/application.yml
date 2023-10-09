@@ -1,5 +1,8 @@
 server:
     port: 5001
+kafka:
+    topic: api.spring.teste.topic
+    group-id: ApiSpringTeste-groupId
 spring:
     datasource:
         driverClassName: org.h2.Driver

@@ -1,4 +1,4 @@
-package br.com.jansoftinfo.apiteste.adapter.in.dto;
+package br.com.jansoftinfo.apiteste.adapter.in.controllers.dto;
 
 import br.com.jansoftinfo.apiteste.adapter.utils.validators.TitleStatusValidator;
 import br.com.jansoftinfo.apiteste.adapter.utils.validators.TitleTypeValidator;

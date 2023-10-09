@@ -1,6 +1,6 @@
 package br.com.jansoftinfo.apiteste.adapter.in.controllers;
 
-import br.com.jansoftinfo.apiteste.adapter.in.dto.CustomerInDTO;
+import br.com.jansoftinfo.apiteste.adapter.in.controllers.dto.CustomerInDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.dto.CustomerOutDTO;
 import br.com.jansoftinfo.apiteste.adapter.utils.Constants;
 import br.com.jansoftinfo.apiteste.domain.ports.in.CustomerInPort;

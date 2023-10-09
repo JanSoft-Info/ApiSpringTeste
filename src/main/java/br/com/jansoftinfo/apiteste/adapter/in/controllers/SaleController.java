@@ -16,6 +16,12 @@ import java.util.List;
 public class SaleController {
     private final SaleInPort port;
 
+    @PostMapping(consumes = Constants.HTTP_CONTENT_TYPE, produces = Constants.HTTP_CONTENT_TYPE)
+    public ResponseEntity<?> sendMessage(@RequestBody String message) {
+        port.sendMessage(message);
+        return new ResponseEntity<>(null, HttpStatus.NO_CONTENT);
+    }
+
     @GetMapping(consumes = Constants.HTTP_CONTENT_TYPE, produces = Constants.HTTP_CONTENT_TYPE)
     public ResponseEntity<?> getSales() {
         return new ResponseEntity<List<SaleOutDTO>>(port.getSales(), HttpStatus.OK);

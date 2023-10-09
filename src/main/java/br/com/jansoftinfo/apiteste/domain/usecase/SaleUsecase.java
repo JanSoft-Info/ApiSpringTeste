@@ -1,6 +1,5 @@
 package br.com.jansoftinfo.apiteste.domain.usecase;
 
-import br.com.jansoftinfo.apiteste.adapter.in.dto.SaleInDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.dto.SaleOutDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.mappers.SaleOutMapper;
 import br.com.jansoftinfo.apiteste.adapter.out.repositories.SaleRepository;
@@ -8,8 +7,10 @@ import br.com.jansoftinfo.apiteste.domain.entities.SaleEntity;
 import br.com.jansoftinfo.apiteste.domain.exceptions.ErrorDTO;
 import br.com.jansoftinfo.apiteste.domain.ports.in.SaleInPort;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,6 +21,16 @@ import java.util.Optional;
 class SaleUsecase implements SaleInPort {
     private final SaleOutMapper mapper;
     private final SaleRepository repository;
+    private final KafkaTemplate<String, String> kafkaTemplate;
+
+    @Value("kafka.topic")
+    private String TOPIC_NAME;
+
+    @Override
+    public void sendMessage(String message) {
+        System.out.println(message);
+        kafkaTemplate.send(TOPIC_NAME, message);
+    }
 
     @Override
     public List<SaleOutDTO> getSales() {
