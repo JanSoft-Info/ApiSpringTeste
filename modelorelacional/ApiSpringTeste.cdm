@@ -943,7 +943,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Code>VENDA</a:Code>
 <a:CreationDate>1696041607</a:CreationDate>
 <a:Creator>janil</a:Creator>
-<a:ModificationDate>1696208326</a:ModificationDate>
+<a:ModificationDate>1697133406</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <a:Comment>Tabela que grava os dados da venda de produtos</a:Comment>
 <c:Identifiers>
@@ -1027,7 +1027,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Code>CLIENTE</a:Code>
 <a:CreationDate>1696041617</a:CreationDate>
 <a:Creator>janil</a:Creator>
-<a:ModificationDate>1696096614</a:ModificationDate>
+<a:ModificationDate>1697133406</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <a:Comment>Tabela que recebe as pessoas físicas/jurídicas que são clientes das vendas</a:Comment>
 <c:Identifiers>
@@ -1330,11 +1330,11 @@ EntityComment 0 Arial,8,N</a:FontList>
 <c:Relationships>
 <o:Relationship Id="o7">
 <a:ObjectID>F15651A2-9472-4B4F-B8A9-3D255B64C203</a:ObjectID>
-<a:Name>venda_contem_clientes</a:Name>
-<a:Code>VENDA_CONTEM_CLIENTES</a:Code>
+<a:Name>venda_contem_cliente</a:Name>
+<a:Code>VENDA_CONTEM_CLIENTE</a:Code>
 <a:CreationDate>1696043795</a:CreationDate>
 <a:Creator>janil</a:Creator>
-<a:ModificationDate>1696096614</a:ModificationDate>
+<a:ModificationDate>1697133406</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
@@ -1437,11 +1437,11 @@ EntityComment 0 Arial,8,N</a:FontList>
 </o:DataItem>
 <o:DataItem Id="o30">
 <a:ObjectID>7AAA6090-6A70-4DA6-BBD6-9596851FBE0B</a:ObjectID>
-<a:Name>valor_titulo</a:Name>
-<a:Code>VALOR_TITULO</a:Code>
+<a:Name>valor_venda</a:Name>
+<a:Code>VALOR_VENDA</a:Code>
 <a:CreationDate>1696041923</a:CreationDate>
 <a:Creator>janil</a:Creator>
-<a:ModificationDate>1696476754</a:ModificationDate>
+<a:ModificationDate>1697154378</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>F</a:DataType>
 </o:DataItem>

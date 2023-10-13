@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
 
 @Getter
 @Setter
@@ -12,7 +13,8 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "produto")
-public class ProductEntity {@Id
+public class ProductEntity {
+    @Id
     @Column(name = "id_produto")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
@@ -28,4 +30,10 @@ public class ProductEntity {@Id
     @NonNull
     @Column(name = "valor_produto")
     private BigDecimal productValue;
+
+    /* RELACIONAMENTOS JPA */
+
+    // N produtos para N vendas
+    @ManyToMany
+    private List<SaleEntity> sales;
 }

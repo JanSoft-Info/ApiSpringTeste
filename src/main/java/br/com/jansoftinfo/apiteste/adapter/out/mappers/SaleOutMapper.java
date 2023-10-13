@@ -38,17 +38,18 @@ public class SaleOutMapper {
     }
 
     private static CustomerOutDTO getCustomerDTO(SaleEntity entity) {
-        return CustomerOutDTO.builder()
+        return null;
+        /*return CustomerOutDTO.builder()
                 .customerId(entity.getCustomer().getCustomerId())
                 .documentId(entity.getCustomer().getCustomerDocumentId())
                 .customerName(entity.getCustomer().getCustomerName())
                 .customerType(entity.getCustomer().getCustomerType())
-                .build();
+                .build();*/
     }
 
     private static List<TitleOutDTO> getTitleDTOS(SaleEntity entity) {
         List<TitleOutDTO> titlesDTO = new ArrayList<>();
-        List<TitleEntity> titlesEntity = entity.getTitles();
+        /*List<TitleEntity> titlesEntity = entity.getTitles();
         titlesEntity.forEach(title -> {
             titlesDTO.add(
                     TitleOutDTO.builder()
@@ -59,7 +60,7 @@ public class SaleOutMapper {
                             .titleType(title.getTitleType())
                             .titleStatus(title.getTitleStatus())
                             .build());
-        });
+        });*/
         return titlesDTO;
     }
 }

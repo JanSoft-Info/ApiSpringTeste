@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.kafka.core.KafkaTemplate;
+//import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,7 +21,7 @@ import java.util.Optional;
 class SaleUsecase implements SaleInPort {
     private final SaleOutMapper mapper;
     private final SaleRepository repository;
-    private final KafkaTemplate<String, String> kafkaTemplate;
+    //private final KafkaTemplate<String, String> kafkaTemplate;
 
     @Value("kafka.topic")
     private String TOPIC_NAME;
@@ -29,7 +29,7 @@ class SaleUsecase implements SaleInPort {
     @Override
     public void sendMessage(String message) {
         System.out.println(message);
-        kafkaTemplate.send(TOPIC_NAME, message);
+        //kafkaTemplate.send(TOPIC_NAME, message);
     }
 
     @Override
@@ -44,9 +44,9 @@ class SaleUsecase implements SaleInPort {
 
     @Override
     public ResponseEntity<?> getSale(Long id) {
-        var operation = findOperationById(id);
-        if (operation.isPresent())
-            return new ResponseEntity<>(mapper.toDTO(operation.get()), HttpStatus.OK);
+        var sale = findSaleById(id);
+        if (sale.isPresent())
+            return new ResponseEntity<>(mapper.toDTO(sale.get()), HttpStatus.OK);
         else
             return new ResponseEntity<>(ErrorDTO.builder()
                     .message("Venda não encontrada")
@@ -58,7 +58,7 @@ class SaleUsecase implements SaleInPort {
         return mapper.toDTO(repository.getSalesByCustomerId(id));
     }
 
-    private Optional<SaleEntity> findOperationById(Long id) {
+    private Optional<SaleEntity> findSaleById(Long id) {
         return repository.findById(id);
     }
 }

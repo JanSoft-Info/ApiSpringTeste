@@ -33,10 +33,20 @@ public class SaleEntity {
     private String saleStatus;
 
     /* RELACIONAMENTOS JPA */
-    @ManyToOne
-    @JoinColumn(name = "id_cliente_venda")
+
+    // 1 vanda para 1 cliente
+    @OneToOne
+    @JoinColumn(name = "id_cliente")
     private CustomerEntity customer;
 
-    @OneToMany(mappedBy = "sale")
+    // 1 venda para N títulos
+    @OneToMany
     private List<TitleEntity> titles;
+
+    // N vendas para N produtos
+    @ManyToMany
+    @JoinTable(name = "item",
+            joinColumns = @JoinColumn(name = "id_venda"),
+            inverseJoinColumns = @JoinColumn(name = "id_produto"))
+    private List<ProductEntity> products;
 }

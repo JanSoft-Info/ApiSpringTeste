@@ -18,6 +18,7 @@ public class CustomerEntity {
     @Column(name = "id_cliente")
     private Long customerId;
 
+    @NonNull
     @Column(name = "cpf_cnpj_cliente", unique = true)
     private String customerDocumentId;
 
@@ -25,10 +26,14 @@ public class CustomerEntity {
     @Column(name = "nome_cliente")
     private String customerName;
 
+    @NonNull
     @Column(name = "tipo_cliente")
     private String customerType;
 
     /* RELACIONAMENTOS JPA */
+    @OneToMany
+    private List<SaleEntity> sales;
+
     @OneToMany(mappedBy = "customer")
-    List<SaleEntity> sales;
+    private List<TitleEntity> titles;
 }
