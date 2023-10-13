@@ -12,7 +12,7 @@
 <a:Code>CONCEPTUALDATAMODEL_1</a:Code>
 <a:CreationDate>1696041600</a:CreationDate>
 <a:Creator>janil</a:Creator>
-<a:ModificationDate>1696208540</a:ModificationDate>
+<a:ModificationDate>1697160661</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -388,7 +388,7 @@ NameToCode=Yes</a:ModelOptionsText>
 <a:Code>DIAGRAM_1</a:Code>
 <a:CreationDate>1696041600</a:CreationDate>
 <a:Creator>janil</a:Creator>
-<a:ModificationDate>1696208540</a:ModificationDate>
+<a:ModificationDate>1697160661</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
@@ -742,27 +742,6 @@ NAMA 0 Arial,8,N</a:FontList>
 </c:Object>
 </o:RelationshipSymbol>
 <o:RelationshipSymbol Id="o8">
-<a:CreationDate>1696043996</a:CreationDate>
-<a:ModificationDate>1696096108</a:ModificationDate>
-<a:CenterTextOffset>(-375, 1076)</a:CenterTextOffset>
-<a:Rect>((14436,-12750), (25687,6600))</a:Rect>
-<a:ListOfPoints>((14527,-12750),(21675,-12750),(21750,6600),(14436,6600))</a:ListOfPoints>
-<a:ArrowStyle>5138</a:ArrowStyle>
-<a:LineColor>11184640</a:LineColor>
-<a:ShadowColor>12632256</a:ShadowColor>
-<a:FontList>DISPNAME 0 Arial,8,N
-NAMA 0 Arial,8,N</a:FontList>
-<c:SourceSymbol>
-<o:EntitySymbol Ref="o9"/>
-</c:SourceSymbol>
-<c:DestinationSymbol>
-<o:EntitySymbol Ref="o6"/>
-</c:DestinationSymbol>
-<c:Object>
-<o:Relationship Ref="o10"/>
-</c:Object>
-</o:RelationshipSymbol>
-<o:RelationshipSymbol Id="o11">
 <a:CreationDate>1696096006</a:CreationDate>
 <a:ModificationDate>1696096006</a:ModificationDate>
 <a:Rect>((-20775,-11850), (-3525,5100))</a:Rect>
@@ -779,10 +758,10 @@ NAMA 0 Arial,8,N</a:FontList>
 <o:EntitySymbol Ref="o9"/>
 </c:DestinationSymbol>
 <c:Object>
-<o:Relationship Ref="o12"/>
+<o:Relationship Ref="o10"/>
 </c:Object>
 </o:RelationshipSymbol>
-<o:RelationshipSymbol Id="o13">
+<o:RelationshipSymbol Id="o11">
 <a:CreationDate>1696207808</a:CreationDate>
 <a:ModificationDate>1696207889</a:ModificationDate>
 <a:CenterTextOffset>(0, 4726)</a:CenterTextOffset>
@@ -797,13 +776,13 @@ NAMA 0 Arial,8,N</a:FontList>
 <o:EntitySymbol Ref="o5"/>
 </c:SourceSymbol>
 <c:DestinationSymbol>
-<o:EntitySymbol Ref="o14"/>
+<o:EntitySymbol Ref="o12"/>
 </c:DestinationSymbol>
 <c:Object>
-<o:Relationship Ref="o15"/>
+<o:Relationship Ref="o13"/>
 </c:Object>
 </o:RelationshipSymbol>
-<o:RelationshipSymbol Id="o16">
+<o:RelationshipSymbol Id="o14">
 <a:CreationDate>1696208540</a:CreationDate>
 <a:ModificationDate>1696208548</a:ModificationDate>
 <a:CenterTextOffset>(450, -3899)</a:CenterTextOffset>
@@ -815,13 +794,13 @@ NAMA 0 Arial,8,N</a:FontList>
 <a:FontList>DISPNAME 0 Arial,8,N
 NAMA 0 Arial,8,N</a:FontList>
 <c:SourceSymbol>
-<o:EntitySymbol Ref="o17"/>
+<o:EntitySymbol Ref="o15"/>
 </c:SourceSymbol>
 <c:DestinationSymbol>
-<o:EntitySymbol Ref="o14"/>
+<o:EntitySymbol Ref="o12"/>
 </c:DestinationSymbol>
 <c:Object>
-<o:Relationship Ref="o18"/>
+<o:Relationship Ref="o16"/>
 </c:Object>
 </o:RelationshipSymbol>
 <o:EntitySymbol Id="o5">
@@ -844,7 +823,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
-<o:Entity Ref="o19"/>
+<o:Entity Ref="o17"/>
 </c:Object>
 </o:EntitySymbol>
 <o:EntitySymbol Id="o6">
@@ -865,7 +844,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Entity Ref="o20"/>
+<o:Entity Ref="o18"/>
 </c:Object>
 </o:EntitySymbol>
 <o:EntitySymbol Id="o9">
@@ -886,10 +865,10 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Entity Ref="o21"/>
+<o:Entity Ref="o19"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o17">
+<o:EntitySymbol Id="o15">
 <a:CreationDate>1696206345</a:CreationDate>
 <a:ModificationDate>1696207124</a:ModificationDate>
 <a:Rect>((-39152,-25746), (-24450,-18654))</a:Rect>
@@ -907,10 +886,10 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Entity Ref="o22"/>
+<o:Entity Ref="o20"/>
 </c:Object>
 </o:EntitySymbol>
-<o:EntitySymbol Id="o14">
+<o:EntitySymbol Id="o12">
 <a:CreationDate>1696207143</a:CreationDate>
 <a:ModificationDate>1696207782</a:ModificationDate>
 <a:Rect>((-31135,-10859), (-21067,-4741))</a:Rect>
@@ -927,7 +906,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
 <c:Object>
-<o:Entity Ref="o23"/>
+<o:Entity Ref="o21"/>
 </c:Object>
 </o:EntitySymbol>
 </c:Symbols>
@@ -937,7 +916,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <o:ConceptualDiagram Ref="o3"/>
 </c:DefaultDiagram>
 <c:Entities>
-<o:Entity Id="o19">
+<o:Entity Id="o17">
 <a:ObjectID>16E4DF7B-BB60-4240-B8DE-00DDA3929970</a:ObjectID>
 <a:Name>venda</a:Name>
 <a:Code>VENDA</a:Code>
@@ -947,7 +926,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:Comment>Tabela que grava os dados da venda de produtos</a:Comment>
 <c:Identifiers>
-<o:Identifier Id="o24">
+<o:Identifier Id="o22">
 <a:ObjectID>1AD3E437-6C63-493F-B5F1-9ECE8BF4D1C5</a:ObjectID>
 <a:Name>id_venda</a:Name>
 <a:Code>ID_VENDA</a:Code>
@@ -956,15 +935,15 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1696094787</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o25"/>
+<o:EntityAttribute Ref="o23"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o24"/>
+<o:Identifier Ref="o22"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o25">
+<o:EntityAttribute Id="o23">
 <a:ObjectID>A3417E5A-76D3-48D4-A232-73901D879256</a:ObjectID>
 <a:CreationDate>1696041923</a:CreationDate>
 <a:Creator>janil</a:Creator>
@@ -972,11 +951,22 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
+<o:DataItem Ref="o24"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o25">
+<a:ObjectID>F9FE6199-0555-4D29-AEF2-88220E0708B7</a:ObjectID>
+<a:CreationDate>1696041923</a:CreationDate>
+<a:Creator>janil</a:Creator>
+<a:ModificationDate>1696095163</a:ModificationDate>
+<a:Modifier>janil</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
 <o:DataItem Ref="o26"/>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o27">
-<a:ObjectID>F9FE6199-0555-4D29-AEF2-88220E0708B7</a:ObjectID>
+<a:ObjectID>16B88BCD-6CB0-4251-B988-34FA9270B79B</a:ObjectID>
 <a:CreationDate>1696041923</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696095163</a:ModificationDate>
@@ -987,7 +977,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o29">
-<a:ObjectID>16B88BCD-6CB0-4251-B988-34FA9270B79B</a:ObjectID>
+<a:ObjectID>FB4EF16D-50AF-40DE-B2B4-AA2853188B46</a:ObjectID>
 <a:CreationDate>1696041923</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696095163</a:ModificationDate>
@@ -998,7 +988,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o31">
-<a:ObjectID>FB4EF16D-50AF-40DE-B2B4-AA2853188B46</a:ObjectID>
+<a:ObjectID>D38572BB-D440-4953-BC9B-83A076D5CEF0</a:ObjectID>
 <a:CreationDate>1696041923</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696095163</a:ModificationDate>
@@ -1008,20 +998,9 @@ EntityComment 0 Arial,8,N</a:FontList>
 <o:DataItem Ref="o32"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o33">
-<a:ObjectID>D38572BB-D440-4953-BC9B-83A076D5CEF0</a:ObjectID>
-<a:CreationDate>1696041923</a:CreationDate>
-<a:Creator>janil</a:Creator>
-<a:ModificationDate>1696095163</a:ModificationDate>
-<a:Modifier>janil</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o34"/>
-</c:DataItem>
-</o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
-<o:Entity Id="o20">
+<o:Entity Id="o18">
 <a:ObjectID>C5793A33-3AC9-4A06-8B8B-9BCE02E23B62</a:ObjectID>
 <a:Name>cliente</a:Name>
 <a:Code>CLIENTE</a:Code>
@@ -1031,7 +1010,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:Comment>Tabela que recebe as pessoas físicas/jurídicas que são clientes das vendas</a:Comment>
 <c:Identifiers>
-<o:Identifier Id="o35">
+<o:Identifier Id="o33">
 <a:ObjectID>074AE441-983D-4BFA-9375-CF83F3813839</a:ObjectID>
 <a:Name>id_cliente</a:Name>
 <a:Code>ID_CLIENTE</a:Code>
@@ -1040,15 +1019,15 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1696042509</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o36"/>
+<o:EntityAttribute Ref="o34"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o35"/>
+<o:Identifier Ref="o33"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o36">
+<o:EntityAttribute Id="o34">
 <a:ObjectID>0D396E97-77F4-40A0-92B2-98C3F98A259F</a:ObjectID>
 <a:CreationDate>1696042424</a:CreationDate>
 <a:Creator>janil</a:Creator>
@@ -1056,11 +1035,22 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
+<o:DataItem Ref="o35"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o36">
+<a:ObjectID>F93925C0-A670-4AC8-B63A-1E46E5F30030</a:ObjectID>
+<a:CreationDate>1696042424</a:CreationDate>
+<a:Creator>janil</a:Creator>
+<a:ModificationDate>1696095203</a:ModificationDate>
+<a:Modifier>janil</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
 <o:DataItem Ref="o37"/>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o38">
-<a:ObjectID>F93925C0-A670-4AC8-B63A-1E46E5F30030</a:ObjectID>
+<a:ObjectID>F054218C-8DE9-4E80-AC1C-AFECF12BD4F1</a:ObjectID>
 <a:CreationDate>1696042424</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696095203</a:ModificationDate>
@@ -1071,7 +1061,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o40">
-<a:ObjectID>F054218C-8DE9-4E80-AC1C-AFECF12BD4F1</a:ObjectID>
+<a:ObjectID>9A6D8538-EB71-4D9D-8C5E-174B06226222</a:ObjectID>
 <a:CreationDate>1696042424</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696095203</a:ModificationDate>
@@ -1081,20 +1071,9 @@ EntityComment 0 Arial,8,N</a:FontList>
 <o:DataItem Ref="o41"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o42">
-<a:ObjectID>9A6D8538-EB71-4D9D-8C5E-174B06226222</a:ObjectID>
-<a:CreationDate>1696042424</a:CreationDate>
-<a:Creator>janil</a:Creator>
-<a:ModificationDate>1696095203</a:ModificationDate>
-<a:Modifier>janil</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o43"/>
-</c:DataItem>
-</o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
-<o:Entity Id="o21">
+<o:Entity Id="o19">
 <a:ObjectID>D8B62E5F-E706-45B2-8ED0-41AE1E31C50C</a:ObjectID>
 <a:Name>titulo</a:Name>
 <a:Code>TITULO</a:Code>
@@ -1103,7 +1082,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1696096095</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <c:Identifiers>
-<o:Identifier Id="o44">
+<o:Identifier Id="o42">
 <a:ObjectID>2FB35165-B280-4140-ADCC-3C8CA3F64CD7</a:ObjectID>
 <a:Name>id_titulo</a:Name>
 <a:Code>ID_TITULO</a:Code>
@@ -1112,15 +1091,15 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1696094920</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o45"/>
+<o:EntityAttribute Ref="o43"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o44"/>
+<o:Identifier Ref="o42"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o45">
+<o:EntityAttribute Id="o43">
 <a:ObjectID>054A3CC9-F062-45E2-B888-BB50DBBB7E79</a:ObjectID>
 <a:CreationDate>1696042814</a:CreationDate>
 <a:Creator>janil</a:Creator>
@@ -1128,11 +1107,22 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
+<o:DataItem Ref="o44"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o45">
+<a:ObjectID>A426C370-57D4-4279-8E9B-8EE8FC59C283</a:ObjectID>
+<a:CreationDate>1696042814</a:CreationDate>
+<a:Creator>janil</a:Creator>
+<a:ModificationDate>1696476847</a:ModificationDate>
+<a:Modifier>janil</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
 <o:DataItem Ref="o46"/>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o47">
-<a:ObjectID>A426C370-57D4-4279-8E9B-8EE8FC59C283</a:ObjectID>
+<a:ObjectID>4CA22C4D-12A7-48CA-BAA2-C6D3C63E7B5F</a:ObjectID>
 <a:CreationDate>1696042814</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696476847</a:ModificationDate>
@@ -1143,7 +1133,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o49">
-<a:ObjectID>4CA22C4D-12A7-48CA-BAA2-C6D3C63E7B5F</a:ObjectID>
+<a:ObjectID>23A688F2-DBFC-4392-BFFD-8A7A71F9A951</a:ObjectID>
 <a:CreationDate>1696042814</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696476847</a:ModificationDate>
@@ -1154,7 +1144,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o51">
-<a:ObjectID>23A688F2-DBFC-4392-BFFD-8A7A71F9A951</a:ObjectID>
+<a:ObjectID>F973E514-8C9C-4C36-B872-A00083A809BA</a:ObjectID>
 <a:CreationDate>1696042814</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696476847</a:ModificationDate>
@@ -1165,17 +1155,6 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o53">
-<a:ObjectID>F973E514-8C9C-4C36-B872-A00083A809BA</a:ObjectID>
-<a:CreationDate>1696042814</a:CreationDate>
-<a:Creator>janil</a:Creator>
-<a:ModificationDate>1696476847</a:ModificationDate>
-<a:Modifier>janil</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o54"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o55">
 <a:ObjectID>4EC2C80C-28C2-48E1-8BF5-8BB758ECE069</a:ObjectID>
 <a:CreationDate>1696042814</a:CreationDate>
 <a:Creator>janil</a:Creator>
@@ -1183,11 +1162,22 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
-<o:DataItem Ref="o30"/>
+<o:DataItem Ref="o28"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o54">
+<a:ObjectID>1F82704E-9D04-4E1B-94E9-277AFF09562E</a:ObjectID>
+<a:CreationDate>1696042814</a:CreationDate>
+<a:Creator>janil</a:Creator>
+<a:ModificationDate>1696476847</a:ModificationDate>
+<a:Modifier>janil</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o55"/>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o56">
-<a:ObjectID>1F82704E-9D04-4E1B-94E9-277AFF09562E</a:ObjectID>
+<a:ObjectID>EA46EF11-15B4-40C1-95B0-E0627B42F7DF</a:ObjectID>
 <a:CreationDate>1696042814</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696476847</a:ModificationDate>
@@ -1197,20 +1187,9 @@ EntityComment 0 Arial,8,N</a:FontList>
 <o:DataItem Ref="o57"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o58">
-<a:ObjectID>EA46EF11-15B4-40C1-95B0-E0627B42F7DF</a:ObjectID>
-<a:CreationDate>1696042814</a:CreationDate>
-<a:Creator>janil</a:Creator>
-<a:ModificationDate>1696476847</a:ModificationDate>
-<a:Modifier>janil</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o59"/>
-</c:DataItem>
-</o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
-<o:Entity Id="o22">
+<o:Entity Id="o20">
 <a:ObjectID>3849D2AE-DC44-48A9-9EF0-795F599CBCB7</a:ObjectID>
 <a:Name>produto</a:Name>
 <a:Code>PRODUTO</a:Code>
@@ -1219,7 +1198,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1696208661</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <c:Identifiers>
-<o:Identifier Id="o60">
+<o:Identifier Id="o58">
 <a:ObjectID>7861DED4-531F-4997-A272-F47CDBA5D32C</a:ObjectID>
 <a:Name>id_produto</a:Name>
 <a:Code>ID_PRODUTO</a:Code>
@@ -1228,16 +1207,27 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1696206829</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <c:Identifier.Attributes>
-<o:EntityAttribute Ref="o61"/>
+<o:EntityAttribute Ref="o59"/>
 </c:Identifier.Attributes>
 </o:Identifier>
 </c:Identifiers>
 <c:PrimaryIdentifier>
-<o:Identifier Ref="o60"/>
+<o:Identifier Ref="o58"/>
 </c:PrimaryIdentifier>
 <c:Attributes>
-<o:EntityAttribute Id="o61">
+<o:EntityAttribute Id="o59">
 <a:ObjectID>B6E45DF5-CCA8-4FCB-9301-55DF8B32B2D1</a:ObjectID>
+<a:CreationDate>1696206746</a:CreationDate>
+<a:Creator>janil</a:Creator>
+<a:ModificationDate>1696206829</a:ModificationDate>
+<a:Modifier>janil</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o60"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o61">
+<a:ObjectID>B17B323D-A30D-4A93-A6F3-D72C493AA93A</a:ObjectID>
 <a:CreationDate>1696206746</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696206829</a:ModificationDate>
@@ -1248,7 +1238,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o63">
-<a:ObjectID>B17B323D-A30D-4A93-A6F3-D72C493AA93A</a:ObjectID>
+<a:ObjectID>F86A783A-133D-4208-A4C8-BC14395D18A1</a:ObjectID>
 <a:CreationDate>1696206746</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696206829</a:ModificationDate>
@@ -1259,8 +1249,8 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o65">
-<a:ObjectID>F86A783A-133D-4208-A4C8-BC14395D18A1</a:ObjectID>
-<a:CreationDate>1696206746</a:CreationDate>
+<a:ObjectID>6429ED74-FC16-4DEF-886D-759160FB1F22</a:ObjectID>
+<a:CreationDate>1696206829</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696206829</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
@@ -1269,20 +1259,9 @@ EntityComment 0 Arial,8,N</a:FontList>
 <o:DataItem Ref="o66"/>
 </c:DataItem>
 </o:EntityAttribute>
-<o:EntityAttribute Id="o67">
-<a:ObjectID>6429ED74-FC16-4DEF-886D-759160FB1F22</a:ObjectID>
-<a:CreationDate>1696206829</a:CreationDate>
-<a:Creator>janil</a:Creator>
-<a:ModificationDate>1696206829</a:ModificationDate>
-<a:Modifier>janil</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o68"/>
-</c:DataItem>
-</o:EntityAttribute>
 </c:Attributes>
 </o:Entity>
-<o:Entity Id="o23">
+<o:Entity Id="o21">
 <a:ObjectID>B77AC9AC-D85C-45C8-B0B9-B7D7F4FAB3C6</a:ObjectID>
 <a:Name>item</a:Name>
 <a:Code>ITEM</a:Code>
@@ -1291,9 +1270,20 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:ModificationDate>1696208661</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <c:Attributes>
-<o:EntityAttribute Id="o69">
+<o:EntityAttribute Id="o67">
 <a:ObjectID>1295E663-6C53-4F41-8DA4-36E0FDCABD97</a:ObjectID>
 <a:CreationDate>1696207482</a:CreationDate>
+<a:Creator>janil</a:Creator>
+<a:ModificationDate>1696207720</a:ModificationDate>
+<a:Modifier>janil</a:Modifier>
+<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
+<c:DataItem>
+<o:DataItem Ref="o68"/>
+</c:DataItem>
+</o:EntityAttribute>
+<o:EntityAttribute Id="o69">
+<a:ObjectID>424F94B9-BE9A-4CEF-974E-2D9642BF0DA1</a:ObjectID>
+<a:CreationDate>1696207720</a:CreationDate>
 <a:Creator>janil</a:Creator>
 <a:ModificationDate>1696207720</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
@@ -1303,17 +1293,6 @@ EntityComment 0 Arial,8,N</a:FontList>
 </c:DataItem>
 </o:EntityAttribute>
 <o:EntityAttribute Id="o71">
-<a:ObjectID>424F94B9-BE9A-4CEF-974E-2D9642BF0DA1</a:ObjectID>
-<a:CreationDate>1696207720</a:CreationDate>
-<a:Creator>janil</a:Creator>
-<a:ModificationDate>1696207720</a:ModificationDate>
-<a:Modifier>janil</a:Modifier>
-<a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
-<c:DataItem>
-<o:DataItem Ref="o72"/>
-</c:DataItem>
-</o:EntityAttribute>
-<o:EntityAttribute Id="o73">
 <a:ObjectID>F3630003-E8D9-4340-8BAA-8B30FAFFA137</a:ObjectID>
 <a:CreationDate>1696207720</a:CreationDate>
 <a:Creator>janil</a:Creator>
@@ -1321,7 +1300,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:BaseAttribute.Mandatory>1</a:BaseAttribute.Mandatory>
 <c:DataItem>
-<o:DataItem Ref="o74"/>
+<o:DataItem Ref="o72"/>
 </c:DataItem>
 </o:EntityAttribute>
 </c:Attributes>
@@ -1339,30 +1318,13 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
-<o:Entity Ref="o20"/>
+<o:Entity Ref="o18"/>
 </c:Object1>
 <c:Object2>
-<o:Entity Ref="o19"/>
+<o:Entity Ref="o17"/>
 </c:Object2>
 </o:Relationship>
 <o:Relationship Id="o10">
-<a:ObjectID>D726F8E0-5C08-4A9E-A3C0-6F8FFAC04F48</a:ObjectID>
-<a:Name>cliente_contem_titulos</a:Name>
-<a:Code>CLIENTE_CONTEM_TITULOS</a:Code>
-<a:CreationDate>1696043996</a:CreationDate>
-<a:Creator>janil</a:Creator>
-<a:ModificationDate>1696094977</a:ModificationDate>
-<a:Modifier>janil</a:Modifier>
-<a:Entity1ToEntity2RoleCardinality>1,1</a:Entity1ToEntity2RoleCardinality>
-<a:Entity2ToEntity1RoleCardinality>1,n</a:Entity2ToEntity1RoleCardinality>
-<c:Object1>
-<o:Entity Ref="o20"/>
-</c:Object1>
-<c:Object2>
-<o:Entity Ref="o21"/>
-</c:Object2>
-</o:Relationship>
-<o:Relationship Id="o12">
 <a:ObjectID>AA34C4AC-AA1C-4761-913A-7B802C208DB8</a:ObjectID>
 <a:Name>venda_contem_titulos</a:Name>
 <a:Code>VENDA_CONTEM_TITULOS</a:Code>
@@ -1373,13 +1335,13 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Entity1ToEntity2RoleCardinality>1,n</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
-<o:Entity Ref="o21"/>
+<o:Entity Ref="o19"/>
 </c:Object1>
 <c:Object2>
-<o:Entity Ref="o19"/>
+<o:Entity Ref="o17"/>
 </c:Object2>
 </o:Relationship>
-<o:Relationship Id="o15">
+<o:Relationship Id="o13">
 <a:ObjectID>47E0EFDF-A0FE-48B2-B834-6A1A4AC5A4A1</a:ObjectID>
 <a:Name>vendas_contem_produtos</a:Name>
 <a:Code>VENDAS_CONTEM_PRODUTOS</a:Code>
@@ -1390,13 +1352,13 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Entity1ToEntity2RoleCardinality>1,n</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
-<o:Entity Ref="o23"/>
+<o:Entity Ref="o21"/>
 </c:Object1>
 <c:Object2>
-<o:Entity Ref="o19"/>
+<o:Entity Ref="o17"/>
 </c:Object2>
 </o:Relationship>
-<o:Relationship Id="o18">
+<o:Relationship Id="o16">
 <a:ObjectID>99870CC5-6CEF-49BE-A0AD-54027F74CBF1</a:ObjectID>
 <a:Name>produtos_contem_vendas</a:Name>
 <a:Code>PRODUTOS_CONTEM_VENDAS</a:Code>
@@ -1407,15 +1369,15 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Entity1ToEntity2RoleCardinality>0,n</a:Entity1ToEntity2RoleCardinality>
 <a:Entity2ToEntity1RoleCardinality>1,1</a:Entity2ToEntity1RoleCardinality>
 <c:Object1>
-<o:Entity Ref="o23"/>
+<o:Entity Ref="o21"/>
 </c:Object1>
 <c:Object2>
-<o:Entity Ref="o22"/>
+<o:Entity Ref="o20"/>
 </c:Object2>
 </o:Relationship>
 </c:Relationships>
 <c:DataItems>
-<o:DataItem Id="o26">
+<o:DataItem Id="o24">
 <a:ObjectID>50A0715D-A2E9-4C23-B343-BA64EFCF7EC0</a:ObjectID>
 <a:Name>id_venda</a:Name>
 <a:Code>ID_VENDA</a:Code>
@@ -1425,7 +1387,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o28">
+<o:DataItem Id="o26">
 <a:ObjectID>19D10DAB-5C01-41B2-9F16-AEBA815E17C7</a:ObjectID>
 <a:Name>id_cliente_venda</a:Name>
 <a:Code>ID_CLIENTE_VENDA</a:Code>
@@ -1435,7 +1397,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o30">
+<o:DataItem Id="o28">
 <a:ObjectID>7AAA6090-6A70-4DA6-BBD6-9596851FBE0B</a:ObjectID>
 <a:Name>valor_venda</a:Name>
 <a:Code>VALOR_VENDA</a:Code>
@@ -1445,7 +1407,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>F</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o32">
+<o:DataItem Id="o30">
 <a:ObjectID>AE12DB03-FE32-4CAA-91E8-13C5AD2246A6</a:ObjectID>
 <a:Name>data_hora_venda</a:Name>
 <a:Code>DATA_HORA_VENDA</a:Code>
@@ -1455,7 +1417,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>DT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o34">
+<o:DataItem Id="o32">
 <a:ObjectID>FABA1E4A-F76B-4239-90FA-3FD56B4EA20E</a:ObjectID>
 <a:Name>status_venda</a:Name>
 <a:Code>STATUS_VENDA</a:Code>
@@ -1465,7 +1427,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o39">
+<o:DataItem Id="o37">
 <a:ObjectID>16C8A550-1520-4ACB-B8F6-516A600F4B36</a:ObjectID>
 <a:Name>cpf_cnpj_cliente</a:Name>
 <a:Code>CPF_CNPJ_CLIENTE</a:Code>
@@ -1475,7 +1437,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o41">
+<o:DataItem Id="o39">
 <a:ObjectID>1EDC73C6-8D18-4D7F-8C28-276CE7BEF303</a:ObjectID>
 <a:Name>nome_cliente</a:Name>
 <a:Code>NOME_CLIENTE</a:Code>
@@ -1485,7 +1447,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o43">
+<o:DataItem Id="o41">
 <a:ObjectID>2C299C01-FF23-4C38-BEC0-4EB62EA2442F</a:ObjectID>
 <a:Name>tipo_cliente</a:Name>
 <a:Code>TIPO_CLIENTE</a:Code>
@@ -1495,7 +1457,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o37">
+<o:DataItem Id="o35">
 <a:ObjectID>85EB1090-AD45-4F8F-8C0E-3AC5B8F688B9</a:ObjectID>
 <a:Name>id_cliente</a:Name>
 <a:Code>ID_CLIENTE</a:Code>
@@ -1505,7 +1467,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o46">
+<o:DataItem Id="o44">
 <a:ObjectID>343BCDFB-E88A-4741-AE11-52A6FC0DB072</a:ObjectID>
 <a:Name>id_titulo</a:Name>
 <a:Code>ID_TITULO</a:Code>
@@ -1515,7 +1477,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o48">
+<o:DataItem Id="o46">
 <a:ObjectID>49FD46DC-ACD5-4344-B360-6476C608DF7D</a:ObjectID>
 <a:Name>id_venda_titulo</a:Name>
 <a:Code>ID_VENDA_TITULO</a:Code>
@@ -1525,7 +1487,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o50">
+<o:DataItem Id="o48">
 <a:ObjectID>7C4EAD5F-069A-4C5E-AABF-A1A4AEECAC31</a:ObjectID>
 <a:Name>id_cliente_titulo</a:Name>
 <a:Code>ID_CLIENTE_TITULO</a:Code>
@@ -1535,7 +1497,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o52">
+<o:DataItem Id="o50">
 <a:ObjectID>76FD1D08-BCB7-4C5A-9AE3-FCFAA09F0965</a:ObjectID>
 <a:Name>data_hora_titulo</a:Name>
 <a:Code>DATA_HORA_TITULO</a:Code>
@@ -1545,7 +1507,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>DT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o54">
+<o:DataItem Id="o52">
 <a:ObjectID>8CB86B63-0C3A-4B4B-953C-AFCD5AEB648F</a:ObjectID>
 <a:Name>data_vencimento_titulo</a:Name>
 <a:Code>DATA_VENCIMENTO_TITULO</a:Code>
@@ -1555,7 +1517,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>D</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o57">
+<o:DataItem Id="o55">
 <a:ObjectID>7C9CBB41-D711-48E2-A353-67AA037B644D</a:ObjectID>
 <a:Name>tipo_titulo</a:Name>
 <a:Code>TIPO_TITULO</a:Code>
@@ -1565,7 +1527,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o59">
+<o:DataItem Id="o57">
 <a:ObjectID>DC32FBDA-27DE-40B7-9F98-8AD45A5A18F5</a:ObjectID>
 <a:Name>status_titulo</a:Name>
 <a:Code>STATUS_TITULO</a:Code>
@@ -1575,7 +1537,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o62">
+<o:DataItem Id="o60">
 <a:ObjectID>074AE132-14A3-46DA-B412-714E99037ABF</a:ObjectID>
 <a:Name>id_produto</a:Name>
 <a:Code>ID_PRODUTO</a:Code>
@@ -1585,7 +1547,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o64">
+<o:DataItem Id="o62">
 <a:ObjectID>AB9FC0B7-6046-471F-9A4B-DC539D86BBBF</a:ObjectID>
 <a:Name>descricao_produto</a:Name>
 <a:Code>DESCRICAO_PRODUTO</a:Code>
@@ -1595,7 +1557,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o66">
+<o:DataItem Id="o64">
 <a:ObjectID>D025DA0A-5A24-4011-8EDA-05BFE2FB0D6C</a:ObjectID>
 <a:Name>unidade_produto</a:Name>
 <a:Code>UNIDADE_PRODUTO</a:Code>
@@ -1605,7 +1567,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>TXT</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o68">
+<o:DataItem Id="o66">
 <a:ObjectID>286158C1-DE7E-4B59-9CE1-123729CADA71</a:ObjectID>
 <a:Name>valor_produto</a:Name>
 <a:Code>VALOR_PRODUTO</a:Code>
@@ -1615,7 +1577,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>F</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o70">
+<o:DataItem Id="o68">
 <a:ObjectID>54F3AB1C-6320-4B9A-B7B5-50323B06F036</a:ObjectID>
 <a:Name>id_vendas</a:Name>
 <a:Code>ID_VENDAS</a:Code>
@@ -1625,7 +1587,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o72">
+<o:DataItem Id="o70">
 <a:ObjectID>0A98B3BE-5025-4A22-96F0-07DC3C38FED7</a:ObjectID>
 <a:Name>id_produtos</a:Name>
 <a:Code>ID_PRODUTOS</a:Code>
@@ -1635,7 +1597,7 @@ EntityComment 0 Arial,8,N</a:FontList>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>I</a:DataType>
 </o:DataItem>
-<o:DataItem Id="o74">
+<o:DataItem Id="o72">
 <a:ObjectID>933E9F78-381F-4350-9D7F-7956D6F61A85</a:ObjectID>
 <a:Name>quantidade</a:Name>
 <a:Code>QUANTIDADE</a:Code>

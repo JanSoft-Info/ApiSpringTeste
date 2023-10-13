@@ -1437,11 +1437,11 @@ EntityComment 0 Arial,8,N</a:FontList>
 </o:DataItem>
 <o:DataItem Id="o30">
 <a:ObjectID>7AAA6090-6A70-4DA6-BBD6-9596851FBE0B</a:ObjectID>
-<a:Name>valor_titulo</a:Name>
-<a:Code>VALOR_TITULO</a:Code>
+<a:Name>valor_venda</a:Name>
+<a:Code>VALOR_VENDA</a:Code>
 <a:CreationDate>1696041923</a:CreationDate>
 <a:Creator>janil</a:Creator>
-<a:ModificationDate>1696476754</a:ModificationDate>
+<a:ModificationDate>1697154378</a:ModificationDate>
 <a:Modifier>janil</a:Modifier>
 <a:DataType>F</a:DataType>
 </o:DataItem>

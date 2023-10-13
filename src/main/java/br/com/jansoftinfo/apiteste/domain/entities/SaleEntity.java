@@ -41,6 +41,7 @@ public class SaleEntity {
 
     // 1 venda para N títulos
     @OneToMany
+    @JoinColumn(name = "id_venda")
     private List<TitleEntity> titles;
 
     // N vendas para N produtos

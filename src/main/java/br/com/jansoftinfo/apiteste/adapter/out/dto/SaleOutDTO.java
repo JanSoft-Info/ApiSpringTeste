@@ -1,5 +1,6 @@
 package br.com.jansoftinfo.apiteste.adapter.out.dto;
 
+import br.com.jansoftinfo.apiteste.domain.entities.ProductEntity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -31,6 +32,9 @@ public class SaleOutDTO {
 
     @JsonProperty("cliente_venda")
     private CustomerOutDTO customerSale;
+
+    @JsonProperty("produtos_venda")
+    private List<ProductOutDTO> productsSale;
 
     @JsonProperty("titulos_venda")
     private List<TitleOutDTO> titlesSale;

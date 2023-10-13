@@ -40,11 +40,6 @@ public class TitleEntity {
     private String titleStatus;
 
     /* RELACIONAMENTOS JPA */
-    @ManyToOne
-    @JoinColumn(name = "id_venda")
-    private SaleEntity sale;
-
     @OneToOne
-    @JoinColumn(name = "id_cliente")
-    private CustomerEntity customer;
+    private SaleEntity sale;
 }

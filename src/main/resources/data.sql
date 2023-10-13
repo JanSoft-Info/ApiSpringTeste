@@ -14,13 +14,13 @@ insert into venda (id_cliente, valor_venda, data_hora_venda, status_venda) value
 insert into venda (id_cliente, valor_venda, data_hora_venda, status_venda) values (6, 87500.00, '2023-03-10 14:15:01', 'F');
 
 /* POPULANDO DADOS DA TABELA DE TITULO */
-insert into titulo (id_venda, id_cliente, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (1, 4, '2022-12-25 19:05:32', '2023-01-25', 33750.00, 'B' ,'L');
-insert into titulo (id_venda, id_cliente, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (1, 4, '2022-12-25 19:05:32', '2023-02-25', 33750.00, 'B' ,'V');
-insert into titulo (id_venda, id_cliente, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (2, 5, '2022-07-12 10:25:53', '2022-08-12', 31000.00, 'C' ,'L');
-insert into titulo (id_venda, id_cliente, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (2, 5, '2022-07-12 10:25:53', '2022-09-12', 31000.00, 'C' ,'L');
-insert into titulo (id_venda, id_cliente, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (2, 5, '2022-07-12 10:25:53', '2022-10-12', 31000.00, 'C' ,'L');
-insert into titulo (id_venda, id_cliente, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (2, 5, '2022-07-12 10:25:53', '2022-11-12', 31000.00, 'C' ,'V');
-insert into titulo (id_venda, id_cliente, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (3, 6, '2023-10-03 14:15:01', '2023-10-03', 87500.00, 'P' ,'L');
+insert into titulo (id_venda, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (1, '2022-12-25 19:05:32', '2023-01-25', 33750.00, 'B' ,'L');
+insert into titulo (id_venda, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (1, '2022-12-25 19:05:32', '2023-02-25', 33750.00, 'B' ,'V');
+insert into titulo (id_venda, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (2, '2022-07-12 10:25:53', '2022-08-12', 31000.00, 'C' ,'L');
+insert into titulo (id_venda, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (2, '2022-07-12 10:25:53', '2022-09-12', 31000.00, 'C' ,'L');
+insert into titulo (id_venda, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (2, '2022-07-12 10:25:53', '2022-10-12', 31000.00, 'C' ,'L');
+insert into titulo (id_venda, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (2, '2022-07-12 10:25:53', '2022-11-12', 31000.00, 'C' ,'V');
+insert into titulo (id_venda, data_hora_titulo, data_vencimento_titulo, valor_titulo, tipo_titulo, status_titulo) values (3, '2023-10-03 14:15:01', '2023-10-03', 87500.00, 'P' ,'L');
 
 /* POPULANDO DADOS DA TABELA DE PRODUTO */
 insert into produto (descricao_produto, unidade_produto, valor_produto) values ('TABLET GALAXY 8"', 'UN', 2500.00);

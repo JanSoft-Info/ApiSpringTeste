@@ -12,6 +12,6 @@ public interface SaleRepository extends JpaRepository<SaleEntity, Long> {
     @Query(value = "select * from venda where status_venda = ?", nativeQuery = true)
     List<SaleEntity> getSalesByStatus(String operationStatus);
 
-    @Query(value = "select * from venda where id_cliente_venda = ?", nativeQuery = true)
+    @Query(value = "select * from venda where id_cliente = ?", nativeQuery = true)
     List<SaleEntity> getSalesByCustomerId(Long id);
 }

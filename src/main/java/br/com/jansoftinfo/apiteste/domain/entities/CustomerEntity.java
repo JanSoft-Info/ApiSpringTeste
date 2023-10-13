@@ -33,7 +33,4 @@ public class CustomerEntity {
     /* RELACIONAMENTOS JPA */
     @OneToMany
     private List<SaleEntity> sales;
-
-    @OneToMany(mappedBy = "customer")
-    private List<TitleEntity> titles;
 }

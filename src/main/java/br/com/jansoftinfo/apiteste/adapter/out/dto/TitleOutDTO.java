@@ -20,12 +20,6 @@ public class TitleOutDTO {
     @JsonProperty("id_titulo")
     private Long titleId;
 
-    @JsonProperty("id_venda_titulo")
-    private Long titleSaleId;
-
-    @JsonProperty("id_cliente_titulo")
-    private Long titleCustomerId;
-
     @JsonProperty("data_hora_titulo")
     private LocalDateTime titleDateTime;
 

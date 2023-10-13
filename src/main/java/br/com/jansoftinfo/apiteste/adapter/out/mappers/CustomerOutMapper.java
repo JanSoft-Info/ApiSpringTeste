@@ -12,12 +12,12 @@ public class CustomerOutMapper {
 
     public List<CustomerOutDTO> toDTO(List<CustomerEntity> customersEntity) {
         var customersDTO = new ArrayList<CustomerOutDTO>();
-        customersEntity.forEach(c -> {
+        customersEntity.forEach(customer -> {
             customersDTO.add(CustomerOutDTO.builder()
-                    .customerId(c.getCustomerId())
-                    .documentId(c.getCustomerDocumentId())
-                    .customerName(c.getCustomerName())
-                    .customerType(c.getCustomerType())
+                    .customerId(customer.getCustomerId())
+                    .documentId(customer.getCustomerDocumentId())
+                    .customerName(customer.getCustomerName())
+                    .customerType(customer.getCustomerType())
                     .build());
         });
         return customersDTO;
