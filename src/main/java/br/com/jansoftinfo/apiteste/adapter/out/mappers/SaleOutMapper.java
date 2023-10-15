@@ -1,10 +1,10 @@
 
 package br.com.jansoftinfo.apiteste.adapter.out.mappers;
 
-import br.com.jansoftinfo.apiteste.adapter.out.dto.CustomerOutDTO;
-import br.com.jansoftinfo.apiteste.adapter.out.dto.ProductOutDTO;
-import br.com.jansoftinfo.apiteste.adapter.out.dto.SaleOutDTO;
-import br.com.jansoftinfo.apiteste.adapter.out.dto.TitleOutDTO;
+import br.com.jansoftinfo.apiteste.adapter.out.dtos.CustomerOutDTO;
+import br.com.jansoftinfo.apiteste.adapter.out.dtos.ProductOutDTO;
+import br.com.jansoftinfo.apiteste.adapter.out.dtos.SaleOutDTO;
+import br.com.jansoftinfo.apiteste.adapter.out.dtos.TitleOutDTO;
 import br.com.jansoftinfo.apiteste.domain.entities.SaleEntity;
 import org.springframework.stereotype.Component;
 

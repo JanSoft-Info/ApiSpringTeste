@@ -1,6 +1,6 @@
 package br.com.jansoftinfo.apiteste.adapter.out.mappers;
 
-import br.com.jansoftinfo.apiteste.adapter.out.dto.CustomerOutDTO;
+import br.com.jansoftinfo.apiteste.adapter.out.dtos.CustomerOutDTO;
 import br.com.jansoftinfo.apiteste.domain.entities.CustomerEntity;
 import org.springframework.stereotype.Component;
 

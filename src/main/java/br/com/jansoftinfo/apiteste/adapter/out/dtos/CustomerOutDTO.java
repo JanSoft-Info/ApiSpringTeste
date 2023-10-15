@@ -1,4 +1,4 @@
-package br.com.jansoftinfo.apiteste.adapter.out.dto;
+package br.com.jansoftinfo.apiteste.adapter.out.dtos;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

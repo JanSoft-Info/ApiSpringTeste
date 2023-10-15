@@ -1,6 +1,5 @@
-package br.com.jansoftinfo.apiteste.adapter.out.dto;
+package br.com.jansoftinfo.apiteste.adapter.out.dtos;
 
-import br.com.jansoftinfo.apiteste.domain.entities.ProductEntity;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

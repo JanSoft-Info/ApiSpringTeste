@@ -1,8 +1,9 @@
 package br.com.jansoftinfo.apiteste.domain.usecase;
 
-import br.com.jansoftinfo.apiteste.adapter.out.dto.SaleOutDTO;
+import br.com.jansoftinfo.apiteste.adapter.out.dtos.SaleOutDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.mappers.SaleOutMapper;
 import br.com.jansoftinfo.apiteste.adapter.out.repositories.SaleRepository;
+import br.com.jansoftinfo.apiteste.adapter.utils.messages.MessageFactory;
 import br.com.jansoftinfo.apiteste.domain.entities.SaleEntity;
 import br.com.jansoftinfo.apiteste.domain.exceptions.ErrorDTO;
 import br.com.jansoftinfo.apiteste.domain.ports.in.SaleInPort;
@@ -19,6 +20,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 class SaleUsecase implements SaleInPort {
+    private final MessageFactory msg;
     private final SaleOutMapper mapper;
     private final SaleRepository repository;
     //private final KafkaTemplate<String, String> kafkaTemplate;
@@ -49,7 +51,7 @@ class SaleUsecase implements SaleInPort {
             return new ResponseEntity<>(mapper.toDTO(sale.get()), HttpStatus.OK);
         else
             return new ResponseEntity<>(ErrorDTO.builder()
-                    .message("Venda não encontrada")
+                    .message(msg.get("error.venda.nao.encontrada"))
                     .build(), HttpStatus.OK);
     }
 

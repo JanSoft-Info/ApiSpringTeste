@@ -51,6 +51,8 @@ Agora, acesse a pasta \java\ApiSpringTeste\docker pelo terminal e execute o coma
 ## URLs da API
 ### Database H2
 http://localhost:5001/h2-console
+### Swagger
+http://localhost:5001/swagger-ui/index.html
 ### Promethues
 http://localhost:9090
 ### Grafana

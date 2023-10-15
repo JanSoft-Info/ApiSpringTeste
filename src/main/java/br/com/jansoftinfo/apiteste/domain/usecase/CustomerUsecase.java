@@ -1,10 +1,11 @@
 package br.com.jansoftinfo.apiteste.domain.usecase;
 
-import br.com.jansoftinfo.apiteste.adapter.in.controllers.dto.CustomerInDTO;
+import br.com.jansoftinfo.apiteste.adapter.in.dtos.CustomerInDTO;
 import br.com.jansoftinfo.apiteste.adapter.in.mappers.CustomerInMapper;
-import br.com.jansoftinfo.apiteste.adapter.out.dto.CustomerOutDTO;
+import br.com.jansoftinfo.apiteste.adapter.out.dtos.CustomerOutDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.mappers.CustomerOutMapper;
 import br.com.jansoftinfo.apiteste.adapter.out.repositories.CustomerRepository;
+import br.com.jansoftinfo.apiteste.adapter.utils.messages.MessageFactory;
 import br.com.jansoftinfo.apiteste.domain.entities.CustomerEntity;
 import br.com.jansoftinfo.apiteste.domain.exceptions.ErrorDTO;
 import br.com.jansoftinfo.apiteste.domain.ports.in.CustomerInPort;
@@ -19,6 +20,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 class CustomerUsecase implements CustomerInPort {
+    private final MessageFactory msg;
     private final CustomerInMapper mapperIn;
     private final CustomerOutMapper mapperOut;
     private final CustomerRepository repository;
@@ -40,7 +42,7 @@ class CustomerUsecase implements CustomerInPort {
             return new ResponseEntity<>(mapperOut.toDTO(customer.get()), HttpStatus.OK);
         else
             return new ResponseEntity<>(ErrorDTO.builder()
-                    .message("Cliente não encontrado")
+                    .message(msg.get("error.cliente.nao.encontrado"))
                     .build(), HttpStatus.OK);
     }
 
@@ -53,7 +55,7 @@ class CustomerUsecase implements CustomerInPort {
                             mapperIn.toEntity(customerInDTO))), HttpStatus.OK);
         else
             return new ResponseEntity<>(ErrorDTO.builder()
-                    .message("Cliente não encontrado")
+                    .message(msg.get("error.cliente.nao.encontrado"))
                     .build(), HttpStatus.OK);
     }
 

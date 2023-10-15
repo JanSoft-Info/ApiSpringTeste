@@ -1,4 +1,4 @@
-package br.com.jansoftinfo.apiteste.adapter.in.controllers.dto;
+package br.com.jansoftinfo.apiteste.adapter.in.dtos;
 
 import br.com.jansoftinfo.apiteste.adapter.utils.validators.SaleStatusValidator;
 import com.fasterxml.jackson.annotation.JsonProperty;
