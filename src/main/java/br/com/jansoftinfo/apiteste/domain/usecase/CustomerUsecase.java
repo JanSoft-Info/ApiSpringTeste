@@ -36,7 +36,7 @@ class CustomerUsecase implements CustomerInPort {
     }
 
     @Override
-    public ResponseEntity<?> getCustomer(Long id) {
+    public ResponseEntity<?> getCustomerById(Long id) {
         var customer = findCustomerById(id);
         if (customer.isPresent())
             return new ResponseEntity<>(mapperOut.toDTO(customer.get()), HttpStatus.OK);

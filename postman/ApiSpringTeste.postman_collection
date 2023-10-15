@@ -102,7 +102,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id_cliente\": 1,\r\n    \"cpf_cnpj\": \"52571029000127\",\r\n    \"nome_cliente\": \"Mercado Livre LTDA\",\r\n    \"tipo_cliente\": \"J\"\r\n}",
+					"raw": "{\r\n    \"id_cliente\": 1,\r\n    \"cpf_cnpj_cliente\": \"52571029000127\",\r\n    \"nome_cliente\": \"Mercado Livre LTDA\",\r\n    \"tipo_cliente\": \"J\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -137,7 +137,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cpf_cnpj\": \"33138773389\", \r\n    \"nome_cliente\": \"Damião Oliveira Serpa\", \r\n    \"tipo_cliente\": \"F\"\r\n}",
+					"raw": "{\r\n    \"cpf_cnpj_cliente\": \"33138773389\", \r\n    \"nome_cliente\": \"Damião Oliveira Serpa\", \r\n    \"tipo_cliente\": \"F\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -160,6 +160,31 @@
 		},
 		{
 			"name": "sales",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5001/sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salesResume",
 			"request": {
 				"method": "GET",
 				"header": [

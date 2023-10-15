@@ -36,9 +36,10 @@ insert into produto (descricao_produto, unidade_produto, valor_produto) values (
 insert into produto (descricao_produto, unidade_produto, valor_produto) values ('NOTEBOOK DELL 15"', 'UN', 8000.00);
 
 /* POPULANDO DADOS DA TABELA DE ITENS VENDIDOS */
-insert into item (id_venda, id_produto, quantidade) values (1, 1, 5);
+insert into item (id_venda, id_produto, quantidade) values (1, 1, 4);
 insert into item (id_venda, id_produto, quantidade) values (1, 2, 3);
 insert into item (id_venda, id_produto, quantidade) values (1, 7, 6);
+insert into item (id_venda, id_produto, quantidade) values (1, 1, 1);
 insert into item (id_venda, id_produto, quantidade) values (1, 11, 2);
 insert into item (id_venda, id_produto, quantidade) values (2, 4, 4);
 insert into item (id_venda, id_produto, quantidade) values (2, 6, 2);

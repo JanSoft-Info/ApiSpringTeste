@@ -1,10 +1,7 @@
 
 package br.com.jansoftinfo.apiteste.adapter.out.mappers;
 
-import br.com.jansoftinfo.apiteste.adapter.out.dtos.CustomerOutDTO;
-import br.com.jansoftinfo.apiteste.adapter.out.dtos.ProductOutDTO;
-import br.com.jansoftinfo.apiteste.adapter.out.dtos.SaleOutDTO;
-import br.com.jansoftinfo.apiteste.adapter.out.dtos.TitleOutDTO;
+import br.com.jansoftinfo.apiteste.adapter.out.dtos.*;
 import br.com.jansoftinfo.apiteste.domain.entities.SaleEntity;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +10,14 @@ import java.util.List;
 
 @Component
 public class SaleOutMapper {
+
+    public List<SaleOutResumeDTO> toDTOResume(List<SaleEntity> entities) {
+        var salesDTO = new ArrayList<SaleOutResumeDTO>();
+        entities.forEach(sale -> {
+            salesDTO.add(getSaleResume(sale));
+        });
+        return salesDTO;
+    }
 
     public List<SaleOutDTO> toDTO(List<SaleEntity> entities) {
         var salesDTO = new ArrayList<SaleOutDTO>();
@@ -35,6 +40,17 @@ public class SaleOutMapper {
                 .customerSale(getCustomerDTO(entity))
                 .productsSale(getProductDTOS(entity))
                 .titlesSale(getTitleDTOS(entity))
+                .build();
+    }
+
+    private static SaleOutResumeDTO getSaleResume(SaleEntity entity) {
+        return SaleOutResumeDTO.builder()
+                .saleId(entity.getSaleId())
+                .saleValue(entity.getSaleValue())
+                .saleDateTime(entity.getSaleDateTime())
+                .saleStatus(entity.getSaleStatus())
+                .customerSale(getCustomerDTO(entity).getCustomerName())
+                .productsSale(getProductDTOS(entity))
                 .build();
     }
 

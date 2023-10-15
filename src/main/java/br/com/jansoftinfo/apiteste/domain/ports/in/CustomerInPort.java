@@ -9,7 +9,7 @@ import java.util.List;
 public interface CustomerInPort {
     List<CustomerOutDTO> getCustomers();
 
-    ResponseEntity<?> getCustomer(Long id);
+    ResponseEntity<?> getCustomerById(Long id);
 
     List<CustomerOutDTO> getCustomersByType(String customerType);
 

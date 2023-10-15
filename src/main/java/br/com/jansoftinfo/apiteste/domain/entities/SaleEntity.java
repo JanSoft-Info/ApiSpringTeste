@@ -1,5 +1,6 @@
 package br.com.jansoftinfo.apiteste.domain.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import javax.persistence.*;
@@ -34,17 +35,14 @@ public class SaleEntity {
 
     /* RELACIONAMENTOS JPA */
 
-    // 1 vanda para 1 cliente
     @OneToOne
     @JoinColumn(name = "id_cliente")
     private CustomerEntity customer;
 
-    // 1 venda para N títulos
     @OneToMany
     @JoinColumn(name = "id_venda")
     private List<TitleEntity> titles;
 
-    // N vendas para N produtos
     @ManyToMany
     @JoinTable(name = "item",
             joinColumns = @JoinColumn(name = "id_venda"),

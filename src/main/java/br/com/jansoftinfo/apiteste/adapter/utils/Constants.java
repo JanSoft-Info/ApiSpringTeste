@@ -18,10 +18,10 @@ public interface Constants {
     String POST_CUSTOMERS = "Endpoint que grava um novo cliente";
     String POST_SALES = "Endpoint que produz uma mensagem kafka com uma venda";
     String GET_SALES = "Endpoint que lista todos as vendas";
+    String GET_SALES_RESUME = "Endpoint que lista todas vendas com dados resumidos";
     String GET_SALES_ID = "Endpoint que consulta uma venda por id";
     String GET_SALES_QUERY = "Endpoint que consulta uma venda por status";
     String GET_SALES_ID_CUSTOMER = "Endpoint que consulta vendas pelo id do cliente";
-
     String MESSAGE_CODE200 = "Requisição realizada com sucesso";
     String MESSAGE_CODE201 = "Criado com sucesso";
     String MESSAGE_CODE204 = "Sem conteúdo";

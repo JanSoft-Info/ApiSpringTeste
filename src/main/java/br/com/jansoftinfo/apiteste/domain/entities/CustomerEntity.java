@@ -31,6 +31,7 @@ public class CustomerEntity {
     private String customerType;
 
     /* RELACIONAMENTOS JPA */
+
     @OneToMany
     private List<SaleEntity> sales;
 }

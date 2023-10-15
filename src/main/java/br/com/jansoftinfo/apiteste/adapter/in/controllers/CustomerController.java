@@ -27,8 +27,8 @@ public class CustomerController {
 
     @GetMapping(value = "/{idCustomer}", produces = Constants.HTTP_CONTENT_TYPE)
     @Operation(summary = Constants.GET_CUSTOMERS_ID)
-    public ResponseEntity<?> getCustomer(@PathVariable Long idCustomer) {
-        return port.getCustomer(idCustomer);
+    public ResponseEntity<?> getCustomerById(@PathVariable Long idCustomer) {
+        return port.getCustomerById(idCustomer);
     }
 
     @GetMapping(value = "/query", produces = Constants.HTTP_CONTENT_TYPE)
