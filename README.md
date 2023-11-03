@@ -35,9 +35,12 @@ Essa API disponibiliza alguns painéis de observabilidade feitos no grafana, par
 - User: admin
 - Password: admin
 
+### Tracing
+Essa API disponibiliza um portal de tracing através do Jeagger
+
 ## Docker
-Essa API disponibiliza um docker-compose para baixar e conteniarizar algumas imagems de aplicações utilizadas pela mesma, esse arquivo esta na pasta indicada abaixo:
-- \java\ApiSpringTeste\docker
+Essa API disponibiliza um docker-compose para baixar e conteniarizar algumas imagems de aplicações utilizadas pela mesma, além da própria aplicação dockerizada para fins didáticos na utilização de tracing com o Jeager. Esse arquivo esta na pasta indicada abaixo:
+- \java\ApiSpringTeste
 
 Antes de executar esse arquivo, certifique-se que que tenha instalado em sua máquina o Docker, caso não tenha ele pode ser baixado de acordo com seu sistema operacional no site do fabricante:
 https://docs.docker.com/get-docker/
@@ -45,7 +48,7 @@ https://docs.docker.com/get-docker/
 Após a instalação, verifique se o docker-compose está instalado corretamente executando o comando no seu terminal:
 - docker-compose --version
 
-Agora, acesse a pasta \java\ApiSpringTeste\docker pelo terminal e execute o comando:
+Agora, acesse a pasta \java\ApiSpringTeste pelo terminal e execute o comando:
 - docker-compose up -d
 
 ## URLs da API
@@ -57,6 +60,8 @@ http://localhost:5001/swagger-ui/index.html
 http://localhost:9090
 ### Grafana
 http://localhost:3000
+### Jeager
+http://localhost:16686/search
 ### kafkaDrop
 http://localhost:9000
 ### Actuator
