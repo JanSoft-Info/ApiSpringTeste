@@ -53,6 +53,8 @@ services:
       - '4318:4318'
     environment:
       - LOG_LEVEL=debug
+    depends_on:
+      - app
     networks:
       - apispringnet
 
@@ -102,5 +104,14 @@ services:
       KAFKA_BROKERCONNECT: 'kafka:19091'
     depends_on:
       - kafka
+    networks:
+      - apispringnet
+
+  redis:
+    container_name: redis
+    image: redis/redis-stack:latest
+    command: redis-server --requirepass redis
+    ports:
+      - '6379:6379'
     networks:
       - apispringnet

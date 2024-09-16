@@ -11,9 +11,13 @@ public interface CustomerInPort {
 
     ResponseEntity<?> getCustomerById(Long id);
 
+    CustomerOutDTO getCustomerCache(Long id_cliente);
+
     List<CustomerOutDTO> getCustomersByType(String customerType);
 
     CustomerOutDTO postCustomer(CustomerInDTO customer);
+
+    CustomerInDTO postCustomerInCache(CustomerInDTO customer);
 
     ResponseEntity<?> putCustomer(Long id, CustomerInDTO customer);
 }

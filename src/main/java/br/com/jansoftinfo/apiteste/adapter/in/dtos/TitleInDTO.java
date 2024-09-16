@@ -1,12 +1,12 @@
 package br.com.jansoftinfo.apiteste.adapter.in.dtos;
 
-import br.com.jansoftinfo.apiteste.adapter.utils.validators.TitleStatusValidator;
-import br.com.jansoftinfo.apiteste.adapter.utils.validators.TitleTypeValidator;
+import br.com.jansoftinfo.apiteste.commons.validators.TitleStatusValidator;
+import br.com.jansoftinfo.apiteste.commons.validators.TitleTypeValidator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -36,7 +36,6 @@ public class TitleInDTO {
 
     @JsonProperty("valor_titulo")
     @NotNull(message = "{error.receivable.value.null}")
-    @NotBlank(message = "{error.receivable.value.blank}")
     private BigDecimal receivableValue;
 
     @JsonProperty("tipo_titulo")

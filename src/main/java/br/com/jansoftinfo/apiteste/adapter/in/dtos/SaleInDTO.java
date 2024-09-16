@@ -1,10 +1,10 @@
 package br.com.jansoftinfo.apiteste.adapter.in.dtos;
 
-import br.com.jansoftinfo.apiteste.adapter.utils.validators.SaleStatusValidator;
+import br.com.jansoftinfo.apiteste.commons.validators.SaleStatusValidator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.*;
 import lombok.*;
 
-import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;

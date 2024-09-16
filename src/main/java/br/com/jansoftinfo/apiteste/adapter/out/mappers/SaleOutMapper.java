@@ -32,47 +32,48 @@ public class SaleOutMapper {
     }
 
     private static SaleOutDTO getSale(SaleEntity entity) {
-        return SaleOutDTO.builder()
-                .saleId(entity.getSaleId())
-                .saleValue(entity.getSaleValue())
-                .saleDateTime(entity.getSaleDateTime())
-                .saleStatus(entity.getSaleStatus())
-                .customerSale(getCustomerDTO(entity))
-                .productsSale(getProductDTOS(entity))
-                .titlesSale(getTitleDTOS(entity))
-                .build();
+        return new SaleOutDTO(
+            entity.getSaleId(),
+            entity.getSaleValue(),
+            entity.getSaleDateTime(),
+            entity.getSaleStatus(),
+            getCustomerDTO(entity),
+            getProductDTOS(entity),
+            getTitleDTOS(entity)
+        );
     }
 
     private static SaleOutResumeDTO getSaleResume(SaleEntity entity) {
-        return SaleOutResumeDTO.builder()
-                .saleId(entity.getSaleId())
-                .saleValue(entity.getSaleValue())
-                .saleDateTime(entity.getSaleDateTime())
-                .saleStatus(entity.getSaleStatus())
-                .customerSale(getCustomerDTO(entity).getCustomerName())
-                .productsSale(getProductDTOS(entity))
-                .build();
+        return new SaleOutResumeDTO(
+            entity.getSaleId(),
+            entity.getSaleValue(),
+            entity.getSaleDateTime(),
+            entity.getSaleStatus(),
+            getCustomerDTO(entity).nome_cliente(),
+            getProductDTOS(entity)
+        );
     }
 
     private static CustomerOutDTO getCustomerDTO(SaleEntity entity) {
-        return CustomerOutDTO.builder()
-                .customerId(entity.getCustomer().getCustomerId())
-                .documentId(entity.getCustomer().getCustomerDocumentId())
-                .customerName(entity.getCustomer().getCustomerName())
-                .customerType(entity.getCustomer().getCustomerType())
-                .build();
+        return new CustomerOutDTO(
+            entity.getCustomer().getCustomerId(),
+            entity.getCustomer().getCustomerDocumentId(),
+            entity.getCustomer().getCustomerName(),
+            entity.getCustomer().getCustomerType()
+        );
     }
 
     private static List<ProductOutDTO> getProductDTOS(SaleEntity entity) {
         var products = new ArrayList<ProductOutDTO>();
         entity.getProducts().forEach(product -> {
             products.add(
-                    ProductOutDTO.builder()
-                            .productId(product.getProductId())
-                            .productDescription(product.getProductDescription())
-                            .productUnity(product.getProductUnity())
-                            .productValue(product.getProductValue())
-                            .build());
+                new ProductOutDTO(
+                    product.getProductId(),
+                    product.getProductDescription(),
+                    product.getProductUnity(),
+                    product.getProductValue()
+                )
+            );
         });
         return products;
     }
@@ -81,14 +82,15 @@ public class SaleOutMapper {
         var titles = new ArrayList<TitleOutDTO>();
         entity.getTitles().forEach(title -> {
             titles.add(
-                    TitleOutDTO.builder()
-                            .titleId(title.getTitleId())
-                            .titleDateTime(title.getTitleDateTime())
-                            .titleDueDate(title.getTitleDueDate())
-                            .titleValue(title.getTitleValue())
-                            .titleType(title.getTitleType())
-                            .titleStatus(title.getTitleStatus())
-                            .build());
+                new TitleOutDTO(
+                    title.getTitleId(),
+                    title.getTitleDateTime(),
+                    title.getTitleDueDate(),
+                    title.getTitleValue(),
+                    title.getTitleType(),
+                    title.getTitleStatus()
+                )
+            );
         });
         return titles;
     }

@@ -1,8 +1,8 @@
 package br.com.jansoftinfo.apiteste.domain.entities;
 
+import jakarta.persistence.*;
 import lombok.*;
 
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;

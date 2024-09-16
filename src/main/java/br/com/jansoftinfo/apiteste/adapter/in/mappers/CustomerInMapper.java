@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 public class CustomerInMapper {
     public CustomerEntity toEntity(CustomerInDTO customer) {
         return CustomerEntity.builder()
-                .customerId(customer.getCustomerId())
-                .customerName(customer.getCustomerName())
-                .customerDocumentId(customer.getDocumentId())
-                .customerType(customer.getCustomerType())
+                .customerId(customer.getId_cliente())
+                .customerName(customer.getNome_cliente())
+                .customerDocumentId(customer.getCpf_cnpj_cliente())
+                .customerType(customer.getTipo_cliente())
                 .build();
     }
 }

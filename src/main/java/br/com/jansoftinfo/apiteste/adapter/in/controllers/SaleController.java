@@ -2,7 +2,7 @@ package br.com.jansoftinfo.apiteste.adapter.in.controllers;
 
 import br.com.jansoftinfo.apiteste.adapter.out.dtos.SaleOutDTO;
 import br.com.jansoftinfo.apiteste.adapter.out.dtos.SaleOutResumeDTO;
-import br.com.jansoftinfo.apiteste.adapter.utils.Constants;
+import br.com.jansoftinfo.apiteste.commons.Constants;
 import br.com.jansoftinfo.apiteste.domain.ports.in.SaleInPort;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;

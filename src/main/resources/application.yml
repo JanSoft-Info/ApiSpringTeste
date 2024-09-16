@@ -1,9 +1,21 @@
 server:
     port: 5001
+
 kafka:
     topic: api.spring.teste.topic
     group-id: ApiSpringTeste-groupId
+
+logging:
+    level:
+        org:
+            springframework: DEBUG
+            hibernate: DEBUG
+
 spring:
+    profiles:
+        active: default
+    cache:
+        type: redis
     datasource:
         driverClassName: org.h2.Driver
         password: ''
@@ -22,6 +34,18 @@ spring:
             hibernate:
                 format_sql: true
                 show_sql: true
+    data:
+        redis:
+            host: redis
+            port: 6379
+            password: redis
+            lettuce:
+                pool:
+                    max-active: 8
+                    max-idle: 8
+                    min-idle: 0
+                    max-wait: 10000
+
 management:
     endpoints:
         web:

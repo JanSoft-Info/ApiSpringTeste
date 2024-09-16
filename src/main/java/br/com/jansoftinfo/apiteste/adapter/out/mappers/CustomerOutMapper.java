@@ -13,22 +13,24 @@ public class CustomerOutMapper {
     public List<CustomerOutDTO> toDTO(List<CustomerEntity> customersEntity) {
         var customersDTO = new ArrayList<CustomerOutDTO>();
         customersEntity.forEach(customer -> {
-            customersDTO.add(CustomerOutDTO.builder()
-                    .customerId(customer.getCustomerId())
-                    .documentId(customer.getCustomerDocumentId())
-                    .customerName(customer.getCustomerName())
-                    .customerType(customer.getCustomerType())
-                    .build());
+            customersDTO.add(
+                new CustomerOutDTO(
+                    customer.getCustomerId(),
+                    customer.getCustomerDocumentId(),
+                    customer.getCustomerName(),
+                    customer.getCustomerType()
+                )
+            );
         });
         return customersDTO;
     }
 
     public CustomerOutDTO toDTO(CustomerEntity customerEntity) {
-        return CustomerOutDTO.builder()
-                .customerId(customerEntity.getCustomerId())
-                .documentId(customerEntity.getCustomerDocumentId())
-                .customerName(customerEntity.getCustomerName())
-                .customerType(customerEntity.getCustomerType())
-                .build();
+        return new CustomerOutDTO(
+            customerEntity.getCustomerId(),
+            customerEntity.getCustomerDocumentId(),
+            customerEntity.getCustomerName(),
+            customerEntity.getCustomerType()
+        );
     }
 }
