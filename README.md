@@ -2,10 +2,10 @@
 Api de Testes desenvolvida com Java e o framework Spring Boot com o objetivo didático servindo como uma aplicação para testes de novas tecnologias e funcionalidades.
 
 ## Java
-Essa API foi desenvolvida utilizando o Java 11
+Essa API foi desenvolvida utilizando o Java 17
 
 ## Spring Framework
-Essa API foi desenvolvida utilizando a versão 2.5.0 do Spring Framework
+Essa API foi desenvolvida utilizando a versão 3.2.2 do Spring Framework
 
 ## REST
 Essa API disponibiliza uma serviço REST que pode ser acessado utilizando uma plataforma de API do tipo Postman. O collection das chamadas da API estão diponibilizados na pasta indicada abaixo:
@@ -21,6 +21,10 @@ Essa API usa o banco de dados em memória H2 e conta com o arquivo que popula o 
 ### Modelo Entidade Relacional
 Foi criado um modelo Entidade Relacional (ER) para demonstração das estruturas e relacionamentos das tabelas utilizadas pela API. Esse modelo está disponibilizado na pasta indicada abaixo:
 - \ApiSpringTeste\modelorelacional
+
+## Cache
+### Redis
+Essa API disponibiliza um serviço de cache com Redis para fins de teste.
 
 ## Mensageria
 ### Kafka
