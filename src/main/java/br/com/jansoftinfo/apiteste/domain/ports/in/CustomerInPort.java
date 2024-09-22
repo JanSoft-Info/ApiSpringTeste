@@ -8,16 +8,8 @@ import java.util.List;
 
 public interface CustomerInPort {
     List<CustomerOutDTO> getCustomers();
-
-    ResponseEntity<?> getCustomerById(Long id);
-
-    CustomerOutDTO getCustomerCache(Long id_cliente);
-
+    CustomerOutDTO getCustomerById(Long id);
     List<CustomerOutDTO> getCustomersByType(String customerType);
-
     CustomerOutDTO postCustomer(CustomerInDTO customer);
-
-    CustomerInDTO postCustomerInCache(CustomerInDTO customer);
-
     ResponseEntity<?> putCustomer(Long id, CustomerInDTO customer);
 }

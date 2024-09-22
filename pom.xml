@@ -19,13 +19,21 @@
 		<java.version>17</java.version>
 		<jeager.version>1.8.1</jeager.version>
 		<jacoco.version>0.8.7</jacoco.version>
-		<lombok-version>1.18.34</lombok-version>
+		<lombok.version>1.18.34</lombok.version>
 		<openapi-version>1.7.0</openapi-version>
 		<cucumber-version>7.16.1</cucumber-version>
-		<spring.boot-version>3.3.0</spring.boot-version>
+		<spring.boot-version>3.3.2</spring.boot-version>
 		<h2database-version>2.2.224</h2database-version>
+		<mockito-core.version>4.5.1</mockito-core.version>
+		<rest-assured.version>5.5.0</rest-assured.version>
+		<mockito-core.version>4.5.1</mockito-core.version>
+		<rest-assured.version>5.5.0</rest-assured.version>
 		<spring-kafka-version>3.0.11</spring-kafka-version>
+		<junit-jupiter.version>5.8.2</junit-jupiter.version>
+		<junit-jupiter.version>5.8.1</junit-jupiter.version>
+		<lombok-mapstruct.version>0.2.0</lombok-mapstruct.version>
 		<jacoco.percentage.minimum>0.0</jacoco.percentage.minimum>
+		<mapstruct-processor.version>1.4.2.Final</mapstruct-processor.version>
 	</properties>
 
 	<dependencies>
@@ -68,18 +76,6 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -135,6 +131,47 @@
 			<groupId>redis.clients</groupId>
 			<artifactId>jedis</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<version>${spring.boot-version}</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${rest-assured.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>spring-mock-mvc</artifactId>
+			<version>${rest-assured.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>${mockito-core.version}</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -162,17 +199,17 @@
 						<path>
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>
-							<version>1.4.2.Final</version>
+							<version>${mapstruct-processor.version}</version>
 						</path>
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
-							<version>1.18.22</version>
+							<version>${lombok.version}</version>
 						</path>
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok-mapstruct-binding</artifactId>
-							<version>0.2.0</version>
+							<version>${lombok-mapstruct.version}</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>

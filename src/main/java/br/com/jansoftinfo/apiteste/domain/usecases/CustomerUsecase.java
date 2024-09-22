@@ -22,12 +22,11 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class CustomerUsecase implements CustomerInPort {
+class CustomerUsecase implements CustomerInPort {
     private final MessageFactory msg;
     private final CustomerInMapper mapperIn;
     private final CustomerOutMapper mapperOut;
     private final CustomerRepository repository;
-    private final RedisTemplate<String, Object> redisTemplate;
 
     @Override
     public List<CustomerOutDTO> getCustomers() {
@@ -40,21 +39,11 @@ public class CustomerUsecase implements CustomerInPort {
     }
 
     @Override
-    public ResponseEntity<?> getCustomerById(Long id) {
-        var customer = findCustomerById(id);
-        if (customer.isPresent())
-            return new ResponseEntity<>(mapperOut.toDTO(customer.get()), HttpStatus.OK);
-        else
-            return new ResponseEntity<>(ErrorDTO.builder()
-                    .message(msg.get("error.cliente.nao.encontrado"))
-                    .build(), HttpStatus.OK);
-    }
-
-    @Override
     @Cacheable(value = "customerCache", key = "#id_cliente")
-    public CustomerOutDTO getCustomerCache(Long id_cliente) {
-        ResponseEntity<?> customerById = getCustomerById(id_cliente);
-        return (CustomerOutDTO) customerById.getBody();
+    public CustomerOutDTO getCustomerById(Long id_cliente) {
+        System.out.println("===== Buscando o cliente no banco =====");
+        var customer = findCustomerById(id_cliente);
+        return customer.map(mapperOut::toDTO).orElse(null);
     }
 
     @Override
@@ -72,15 +61,7 @@ public class CustomerUsecase implements CustomerInPort {
 
     @Override
     public CustomerOutDTO postCustomer(CustomerInDTO customer) {
-        CustomerEntity entity = mapperIn.toEntity(customer);
-        return mapperOut.toDTO(repository.save(entity));
-    }
-
-    @Override
-    @CachePut(value = "customerCache", key = "#customer.id_cliente")
-    public CustomerInDTO postCustomerInCache(CustomerInDTO customer) {
-        redisTemplate.opsForValue().set(customer.getId_cliente().toString(), customer);
-        return customer;
+        return mapperOut.toDTO(repository.save(mapperIn.toEntity(customer)));
     }
 
     private Optional<CustomerEntity> findCustomerById(Long id) {
