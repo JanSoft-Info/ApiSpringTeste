@@ -42,6 +42,10 @@ Essa API disponibiliza alguns painéis de observabilidade feitos no grafana, par
 ### Tracing
 Essa API disponibiliza um portal de tracing através do Jeagger
 
+## Testes Unitários
+### Cucumber
+Essa API suporta para testes o Desenvolvimento Orientado por Comportamento (BDD) com Cucumber que permite que os membros da equipe técnica e os stakeholders não técnicos se comuniquem de forma clara e eficaz. Os desenvolvedores, testadores e gerentes de projeto podem escrever testes automatizados em uma linguagem natural, chamada Gherkin, que é legível por humanos. O Cucumber permite que as equipes definam requisitos de software em uma linguagem comum, o que facilita a colaboração e a compreensão dos objetivos do projeto.
+
 ## Docker
 Essa API disponibiliza um docker-compose para baixar e conteniarizar algumas imagems de aplicações utilizadas pela mesma, além da própria aplicação dockerizada para fins didáticos na utilização de tracing com o Jeager. Esse arquivo esta na pasta indicada abaixo:
 - \java\ApiSpringTeste
