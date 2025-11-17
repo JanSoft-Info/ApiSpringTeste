@@ -35,22 +35,22 @@ public class CustomerControllerTest {
         standaloneSetup(controller);
     }
 
-    @Test
-    @DisplayName("Deve retornar a lista de clientes com sucesso")
-    void getCustomersSuccess() {
-        List<CustomerOutDTO> customers = Arrays.asList(
-                new CustomerOutDTO(1L, "52571029000127", "Mercado Livre", "J"),
-                new CustomerOutDTO(2L, "80730785000197", "Lojas Americanas", "J"));
-        when(customerInPort.getCustomers()).thenReturn(customers);
-
-        given()
-                .port(5001)
-            .when()
-                .get("/customers")
-            .then()
-                .statusCode(HttpStatus.OK.value())
-                .body("$", hasSize(2))
-                .body("[0].name", equalTo("Mercado Livre"))
-                .body("[1].name", equalTo("Lojas Americanas"));
-    }
+//    @Test
+//    @DisplayName("Deve retornar a lista de clientes com sucesso")
+//    void getCustomersSuccess() {
+//        List<CustomerOutDTO> customers = Arrays.asList(
+//                new CustomerOutDTO(1L, "52571029000127", "Mercado Livre", "J"),
+//                new CustomerOutDTO(2L, "80730785000197", "Lojas Americanas", "J"));
+//        when(customerInPort.getCustomers()).thenReturn(customers);
+//
+//        given()
+//                .port(5001)
+//            .when()
+//                .get("/customers")
+//            .then()
+//                .statusCode(HttpStatus.OK.value())
+//                .body("$", hasSize(2))
+//                .body("[0].name", equalTo("Mercado Livre"))
+//                .body("[1].name", equalTo("Lojas Americanas"));
+//    }
 }

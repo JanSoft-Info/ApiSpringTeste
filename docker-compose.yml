@@ -32,31 +32,31 @@ services:
     networks:
       - apispringnet
 
-  grafana:
-    container_name: grafana
-    image: grafana/grafana-oss
-    restart: unless-stopped
-    ports:
-      - '3000:3000'
-    volumes:
-      - grafana_data:/var/lib/grafana
-    depends_on:
-      - prometheus
-    networks:
-      - apispringnet
+#  grafana:
+#    container_name: grafana
+#    image: grafana/grafana-oss
+#    restart: unless-stopped
+#    ports:
+#      - '3000:3000'
+#    volumes:
+#      - grafana_data:/var/lib/grafana
+#    depends_on:
+#      - prometheus
+#    networks:
+#      - apispringnet
 
-  jaeger:
-    container_name: jeager
-    image: jaegertracing/all-in-one:latest
-    ports:
-      - '16686:16686'
-      - '4318:4318'
-    environment:
-      - LOG_LEVEL=debug
-    depends_on:
-      - app
-    networks:
-      - apispringnet
+#  jaeger:
+#    container_name: jeager
+#    image: jaegertracing/all-in-one:latest
+#    ports:
+#      - '16686:16686'
+#      - '4318:4318'
+#    environment:
+#      - LOG_LEVEL=debug
+#    depends_on:
+#      - app
+#    networks:
+#      - apispringnet
 
   zookeeper:
     container_name: zookeeper

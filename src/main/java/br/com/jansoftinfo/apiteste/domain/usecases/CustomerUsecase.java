@@ -39,7 +39,7 @@ class CustomerUsecase implements CustomerInPort {
     }
 
     @Override
-    @Cacheable(value = "customerCache", key = "#id_cliente")
+    // @Cacheable(value = "customerCache", key = "#id_cliente")
     public CustomerOutDTO getCustomerById(Long id_cliente) {
         System.out.println("===== Buscando o cliente no banco =====");
         var customer = findCustomerById(id_cliente);
